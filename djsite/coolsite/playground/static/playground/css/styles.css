@@ -1,0 +1,43 @@
+/* main background */
+body { 
+     background-color: #050505; 
+     background-size: cover;
+}
+
+/* field container */
+.main_cont {
+    background-color: #1f1f1f5b;
+    border-radius:.75rem !important;
+}
+
+/* each field */
+.form-control {
+    background-color: #FAF6F0 !important;
+    font-family: 'Play';
+}
+.form-control:focus{
+    border-color: #101010;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #101010;
+}
+
+/* above each field */
+.field{
+    color: #FAF6F0;
+    font-family: 'Play';
+}
+
+/* buttons */
+.btn, .btn:hover, .btn:active, .btn:visited {
+    background-color: #FAF6F0;
+    margin-right: 10px;
+    color: #1e1e1e !important;
+    outline:none;
+    font-family: 'Play';
+}
+.btn:focus{
+    border-color: #101010;
+    box-shadow: none !important;
+    background-color: #FAF6F0;
+    color: #1e1e1e !important;
+    font-family: 'Play';
+}

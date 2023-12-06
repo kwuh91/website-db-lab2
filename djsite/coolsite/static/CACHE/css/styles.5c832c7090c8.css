@@ -1,0 +1,3060 @@
+/* line 4, playground/static/playground/css/styles.sass */
+html, body {
+  height: 100%; }
+
+/* line 7, playground/static/playground/css/styles.sass */
+body {
+  background-color: #050505;
+  background-size: cover; }
+
+/* line 11, playground/static/playground/css/styles.sass */
+.firefly {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 0.4vw;
+  height: 0.4vw;
+  margin: -0.2vw 0 0 9.8vw;
+  animation: ease 200s alternate infinite;
+  pointer-events: none; }
+  /* line 21, playground/static/playground/css/styles.sass */
+  .firefly::before, .firefly::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: -10vw; }
+  /* line 30, playground/static/playground/css/styles.sass */
+  .firefly::before {
+    background: #050505;
+    opacity: 0.4;
+    animation: drift ease alternate infinite; }
+  /* line 35, playground/static/playground/css/styles.sass */
+  .firefly::after {
+    background: white;
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw yellow;
+    animation: drift ease alternate infinite, flash ease infinite; }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(1) {
+  animation-name: move1; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(1)::before {
+    animation-duration: 11s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(1)::after {
+    animation-duration: 11s, 7562ms;
+    animation-delay: 0ms, 7910ms; }
+
+@keyframes move1 {
+  0% {
+    transform: translateX(40vw) translateY(0vh) scale(0.61); }
+  3.7037% {
+    transform: translateX(-14vw) translateY(-16vh) scale(0.64); }
+  7.40741% {
+    transform: translateX(28vw) translateY(34vh) scale(0.42); }
+  11.11111% {
+    transform: translateX(31vw) translateY(39vh) scale(0.85); }
+  14.81481% {
+    transform: translateX(-44vw) translateY(-10vh) scale(0.75); }
+  18.51852% {
+    transform: translateX(32vw) translateY(50vh) scale(0.68); }
+  22.22222% {
+    transform: translateX(23vw) translateY(5vh) scale(0.51); }
+  25.92593% {
+    transform: translateX(18vw) translateY(-11vh) scale(0.57); }
+  29.62963% {
+    transform: translateX(22vw) translateY(44vh) scale(0.82); }
+  33.33333% {
+    transform: translateX(-6vw) translateY(-47vh) scale(0.72); }
+  37.03704% {
+    transform: translateX(29vw) translateY(-14vh) scale(0.34); }
+  40.74074% {
+    transform: translateX(-16vw) translateY(-15vh) scale(0.37); }
+  44.44444% {
+    transform: translateX(18vw) translateY(-10vh) scale(0.52); }
+  48.14815% {
+    transform: translateX(37vw) translateY(10vh) scale(0.68); }
+  51.85185% {
+    transform: translateX(12vw) translateY(22vh) scale(0.45); }
+  55.55556% {
+    transform: translateX(44vw) translateY(-1vh) scale(0.74); }
+  59.25926% {
+    transform: translateX(43vw) translateY(-21vh) scale(0.56); }
+  62.96296% {
+    transform: translateX(32vw) translateY(9vh) scale(0.79); }
+  66.66667% {
+    transform: translateX(47vw) translateY(4vh) scale(0.4); }
+  70.37037% {
+    transform: translateX(8vw) translateY(-34vh) scale(0.61); }
+  74.07407% {
+    transform: translateX(-34vw) translateY(39vh) scale(0.46); }
+  77.77778% {
+    transform: translateX(-23vw) translateY(-4vh) scale(0.93); }
+  81.48148% {
+    transform: translateX(-36vw) translateY(-15vh) scale(0.37); }
+  85.18519% {
+    transform: translateX(-18vw) translateY(41vh) scale(0.31); }
+  88.88889% {
+    transform: translateX(20vw) translateY(-16vh) scale(0.29); }
+  92.59259% {
+    transform: translateX(5vw) translateY(42vh) scale(0.49); }
+  96.2963% {
+    transform: translateX(25vw) translateY(28vh) scale(0.62); }
+  100% {
+    transform: translateX(-26vw) translateY(21vh) scale(0.8); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(2) {
+  animation-name: move2; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(2)::before {
+    animation-duration: 18s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(2)::after {
+    animation-duration: 18s, 7849ms;
+    animation-delay: 0ms, 3137ms; }
+
+@keyframes move2 {
+  0% {
+    transform: translateX(-9vw) translateY(10vh) scale(0.54); }
+  5.26316% {
+    transform: translateX(27vw) translateY(43vh) scale(0.38); }
+  10.52632% {
+    transform: translateX(11vw) translateY(33vh) scale(0.82); }
+  15.78947% {
+    transform: translateX(-18vw) translateY(-26vh) scale(0.34); }
+  21.05263% {
+    transform: translateX(18vw) translateY(20vh) scale(0.34); }
+  26.31579% {
+    transform: translateX(-26vw) translateY(36vh) scale(0.79); }
+  31.57895% {
+    transform: translateX(-21vw) translateY(-35vh) scale(0.52); }
+  36.84211% {
+    transform: translateX(24vw) translateY(7vh) scale(0.88); }
+  42.10526% {
+    transform: translateX(-36vw) translateY(6vh) scale(0.91); }
+  47.36842% {
+    transform: translateX(37vw) translateY(-26vh) scale(0.53); }
+  52.63158% {
+    transform: translateX(-5vw) translateY(-29vh) scale(0.85); }
+  57.89474% {
+    transform: translateX(-28vw) translateY(46vh) scale(0.26); }
+  63.15789% {
+    transform: translateX(-5vw) translateY(-39vh) scale(0.71); }
+  68.42105% {
+    transform: translateX(29vw) translateY(-23vh) scale(0.31); }
+  73.68421% {
+    transform: translateX(9vw) translateY(5vh) scale(0.26); }
+  78.94737% {
+    transform: translateX(20vw) translateY(33vh) scale(0.35); }
+  84.21053% {
+    transform: translateX(-18vw) translateY(-19vh) scale(0.88); }
+  89.47368% {
+    transform: translateX(-13vw) translateY(31vh) scale(1); }
+  94.73684% {
+    transform: translateX(-15vw) translateY(5vh) scale(0.66); }
+  100% {
+    transform: translateX(-40vw) translateY(43vh) scale(0.52); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(3) {
+  animation-name: move3; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(3)::before {
+    animation-duration: 10s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(3)::after {
+    animation-duration: 10s, 7818ms;
+    animation-delay: 0ms, 4574ms; }
+
+@keyframes move3 {
+  0% {
+    transform: translateX(39vw) translateY(30vh) scale(0.44); }
+  5% {
+    transform: translateX(-46vw) translateY(-48vh) scale(0.9); }
+  10% {
+    transform: translateX(-23vw) translateY(25vh) scale(0.6); }
+  15% {
+    transform: translateX(-15vw) translateY(50vh) scale(0.43); }
+  20% {
+    transform: translateX(-21vw) translateY(-47vh) scale(0.96); }
+  25% {
+    transform: translateX(19vw) translateY(-6vh) scale(0.93); }
+  30% {
+    transform: translateX(50vw) translateY(-34vh) scale(0.32); }
+  35% {
+    transform: translateX(32vw) translateY(-13vh) scale(0.49); }
+  40% {
+    transform: translateX(39vw) translateY(45vh) scale(0.32); }
+  45% {
+    transform: translateX(40vw) translateY(-25vh) scale(0.85); }
+  50% {
+    transform: translateX(-11vw) translateY(30vh) scale(0.66); }
+  55% {
+    transform: translateX(49vw) translateY(-30vh) scale(0.61); }
+  60% {
+    transform: translateX(33vw) translateY(-34vh) scale(0.46); }
+  65% {
+    transform: translateX(47vw) translateY(-46vh) scale(0.73); }
+  70% {
+    transform: translateX(32vw) translateY(-34vh) scale(0.47); }
+  75% {
+    transform: translateX(50vw) translateY(-15vh) scale(0.91); }
+  80% {
+    transform: translateX(-5vw) translateY(-43vh) scale(0.99); }
+  85% {
+    transform: translateX(-27vw) translateY(-8vh) scale(0.51); }
+  90% {
+    transform: translateX(10vw) translateY(-17vh) scale(0.26); }
+  95% {
+    transform: translateX(-29vw) translateY(-20vh) scale(0.39); }
+  100% {
+    transform: translateX(-32vw) translateY(29vh) scale(0.49); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(4) {
+  animation-name: move4; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(4)::before {
+    animation-duration: 10s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(4)::after {
+    animation-duration: 10s, 5960ms;
+    animation-delay: 0ms, 4453ms; }
+
+@keyframes move4 {
+  0% {
+    transform: translateX(8vw) translateY(-31vh) scale(0.97); }
+  5.88235% {
+    transform: translateX(30vw) translateY(-9vh) scale(0.6); }
+  11.76471% {
+    transform: translateX(-15vw) translateY(-17vh) scale(0.46); }
+  17.64706% {
+    transform: translateX(8vw) translateY(39vh) scale(0.82); }
+  23.52941% {
+    transform: translateX(31vw) translateY(-31vh) scale(0.81); }
+  29.41176% {
+    transform: translateX(-12vw) translateY(29vh) scale(0.55); }
+  35.29412% {
+    transform: translateX(-17vw) translateY(-18vh) scale(0.75); }
+  41.17647% {
+    transform: translateX(17vw) translateY(28vh) scale(0.54); }
+  47.05882% {
+    transform: translateX(-25vw) translateY(-2vh) scale(0.46); }
+  52.94118% {
+    transform: translateX(-38vw) translateY(-27vh) scale(0.49); }
+  58.82353% {
+    transform: translateX(-44vw) translateY(9vh) scale(0.61); }
+  64.70588% {
+    transform: translateX(-28vw) translateY(16vh) scale(0.42); }
+  70.58824% {
+    transform: translateX(48vw) translateY(25vh) scale(0.55); }
+  76.47059% {
+    transform: translateX(-39vw) translateY(12vh) scale(0.5); }
+  82.35294% {
+    transform: translateX(48vw) translateY(-21vh) scale(0.26); }
+  88.23529% {
+    transform: translateX(-3vw) translateY(-17vh) scale(0.63); }
+  94.11765% {
+    transform: translateX(25vw) translateY(40vh) scale(0.79); }
+  100% {
+    transform: translateX(-24vw) translateY(-43vh) scale(0.27); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(5) {
+  animation-name: move5; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(5)::before {
+    animation-duration: 14s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(5)::after {
+    animation-duration: 14s, 5773ms;
+    animation-delay: 0ms, 1397ms; }
+
+@keyframes move5 {
+  0% {
+    transform: translateX(17vw) translateY(-17vh) scale(0.34); }
+  3.84615% {
+    transform: translateX(23vw) translateY(-32vh) scale(0.82); }
+  7.69231% {
+    transform: translateX(23vw) translateY(41vh) scale(0.95); }
+  11.53846% {
+    transform: translateX(5vw) translateY(35vh) scale(0.45); }
+  15.38462% {
+    transform: translateX(37vw) translateY(-2vh) scale(0.84); }
+  19.23077% {
+    transform: translateX(23vw) translateY(-21vh) scale(0.33); }
+  23.07692% {
+    transform: translateX(-29vw) translateY(-26vh) scale(0.51); }
+  26.92308% {
+    transform: translateX(-40vw) translateY(41vh) scale(0.64); }
+  30.76923% {
+    transform: translateX(-2vw) translateY(12vh) scale(0.73); }
+  34.61538% {
+    transform: translateX(18vw) translateY(38vh) scale(0.83); }
+  38.46154% {
+    transform: translateX(7vw) translateY(43vh) scale(0.51); }
+  42.30769% {
+    transform: translateX(14vw) translateY(-23vh) scale(0.98); }
+  46.15385% {
+    transform: translateX(-4vw) translateY(-48vh) scale(0.7); }
+  50% {
+    transform: translateX(10vw) translateY(-1vh) scale(0.34); }
+  53.84615% {
+    transform: translateX(29vw) translateY(47vh) scale(0.82); }
+  57.69231% {
+    transform: translateX(2vw) translateY(-4vh) scale(0.53); }
+  61.53846% {
+    transform: translateX(-12vw) translateY(-24vh) scale(0.51); }
+  65.38462% {
+    transform: translateX(-28vw) translateY(1vh) scale(0.85); }
+  69.23077% {
+    transform: translateX(3vw) translateY(0vh) scale(0.89); }
+  73.07692% {
+    transform: translateX(20vw) translateY(-8vh) scale(0.32); }
+  76.92308% {
+    transform: translateX(35vw) translateY(26vh) scale(0.52); }
+  80.76923% {
+    transform: translateX(-11vw) translateY(23vh) scale(0.47); }
+  84.61538% {
+    transform: translateX(22vw) translateY(-34vh) scale(0.8); }
+  88.46154% {
+    transform: translateX(-9vw) translateY(5vh) scale(0.61); }
+  92.30769% {
+    transform: translateX(-33vw) translateY(-8vh) scale(0.87); }
+  96.15385% {
+    transform: translateX(-24vw) translateY(18vh) scale(0.86); }
+  100% {
+    transform: translateX(46vw) translateY(-26vh) scale(0.72); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(6) {
+  animation-name: move6; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(6)::before {
+    animation-duration: 15s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(6)::after {
+    animation-duration: 15s, 9610ms;
+    animation-delay: 0ms, 4114ms; }
+
+@keyframes move6 {
+  0% {
+    transform: translateX(42vw) translateY(5vh) scale(0.71); }
+  3.57143% {
+    transform: translateX(-49vw) translateY(-42vh) scale(0.5); }
+  7.14286% {
+    transform: translateX(30vw) translateY(48vh) scale(0.29); }
+  10.71429% {
+    transform: translateX(-8vw) translateY(16vh) scale(0.94); }
+  14.28571% {
+    transform: translateX(-46vw) translateY(27vh) scale(0.89); }
+  17.85714% {
+    transform: translateX(30vw) translateY(39vh) scale(0.6); }
+  21.42857% {
+    transform: translateX(-7vw) translateY(-2vh) scale(0.82); }
+  25% {
+    transform: translateX(-37vw) translateY(-37vh) scale(0.55); }
+  28.57143% {
+    transform: translateX(-44vw) translateY(3vh) scale(0.53); }
+  32.14286% {
+    transform: translateX(40vw) translateY(-35vh) scale(0.26); }
+  35.71429% {
+    transform: translateX(-17vw) translateY(37vh) scale(0.29); }
+  39.28571% {
+    transform: translateX(8vw) translateY(-23vh) scale(0.71); }
+  42.85714% {
+    transform: translateX(37vw) translateY(-25vh) scale(0.75); }
+  46.42857% {
+    transform: translateX(46vw) translateY(35vh) scale(0.59); }
+  50% {
+    transform: translateX(-30vw) translateY(25vh) scale(0.64); }
+  53.57143% {
+    transform: translateX(-21vw) translateY(19vh) scale(0.78); }
+  57.14286% {
+    transform: translateX(33vw) translateY(-9vh) scale(0.28); }
+  60.71429% {
+    transform: translateX(-29vw) translateY(24vh) scale(0.51); }
+  64.28571% {
+    transform: translateX(-2vw) translateY(36vh) scale(0.54); }
+  67.85714% {
+    transform: translateX(-16vw) translateY(-45vh) scale(0.67); }
+  71.42857% {
+    transform: translateX(-32vw) translateY(-28vh) scale(0.27); }
+  75% {
+    transform: translateX(8vw) translateY(-10vh) scale(0.43); }
+  78.57143% {
+    transform: translateX(28vw) translateY(48vh) scale(0.4); }
+  82.14286% {
+    transform: translateX(37vw) translateY(-33vh) scale(0.68); }
+  85.71429% {
+    transform: translateX(-38vw) translateY(-35vh) scale(0.71); }
+  89.28571% {
+    transform: translateX(-31vw) translateY(-44vh) scale(0.6); }
+  92.85714% {
+    transform: translateX(22vw) translateY(-35vh) scale(0.9); }
+  96.42857% {
+    transform: translateX(-42vw) translateY(37vh) scale(0.75); }
+  100% {
+    transform: translateX(-31vw) translateY(-1vh) scale(0.55); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(7) {
+  animation-name: move7; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(7)::before {
+    animation-duration: 10s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(7)::after {
+    animation-duration: 10s, 9318ms;
+    animation-delay: 0ms, 587ms; }
+
+@keyframes move7 {
+  0% {
+    transform: translateX(-19vw) translateY(18vh) scale(0.63); }
+  3.84615% {
+    transform: translateX(-11vw) translateY(-8vh) scale(0.44); }
+  7.69231% {
+    transform: translateX(25vw) translateY(-41vh) scale(0.55); }
+  11.53846% {
+    transform: translateX(-45vw) translateY(-36vh) scale(0.48); }
+  15.38462% {
+    transform: translateX(-15vw) translateY(-18vh) scale(0.96); }
+  19.23077% {
+    transform: translateX(-40vw) translateY(6vh) scale(0.63); }
+  23.07692% {
+    transform: translateX(46vw) translateY(4vh) scale(0.35); }
+  26.92308% {
+    transform: translateX(-29vw) translateY(36vh) scale(0.92); }
+  30.76923% {
+    transform: translateX(43vw) translateY(41vh) scale(0.89); }
+  34.61538% {
+    transform: translateX(48vw) translateY(3vh) scale(0.39); }
+  38.46154% {
+    transform: translateX(-28vw) translateY(3vh) scale(0.33); }
+  42.30769% {
+    transform: translateX(-7vw) translateY(-49vh) scale(0.71); }
+  46.15385% {
+    transform: translateX(35vw) translateY(3vh) scale(0.76); }
+  50% {
+    transform: translateX(-33vw) translateY(6vh) scale(0.6); }
+  53.84615% {
+    transform: translateX(-43vw) translateY(10vh) scale(0.28); }
+  57.69231% {
+    transform: translateX(-47vw) translateY(-4vh) scale(0.62); }
+  61.53846% {
+    transform: translateX(48vw) translateY(-42vh) scale(0.51); }
+  65.38462% {
+    transform: translateX(42vw) translateY(37vh) scale(0.26); }
+  69.23077% {
+    transform: translateX(-10vw) translateY(42vh) scale(0.71); }
+  73.07692% {
+    transform: translateX(49vw) translateY(22vh) scale(0.36); }
+  76.92308% {
+    transform: translateX(16vw) translateY(-12vh) scale(0.73); }
+  80.76923% {
+    transform: translateX(-16vw) translateY(-33vh) scale(0.36); }
+  84.61538% {
+    transform: translateX(22vw) translateY(7vh) scale(0.37); }
+  88.46154% {
+    transform: translateX(-9vw) translateY(16vh) scale(0.88); }
+  92.30769% {
+    transform: translateX(-8vw) translateY(12vh) scale(0.62); }
+  96.15385% {
+    transform: translateX(20vw) translateY(-17vh) scale(0.42); }
+  100% {
+    transform: translateX(7vw) translateY(-32vh) scale(0.51); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(8) {
+  animation-name: move8; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(8)::before {
+    animation-duration: 12s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(8)::after {
+    animation-duration: 12s, 8414ms;
+    animation-delay: 0ms, 4902ms; }
+
+@keyframes move8 {
+  0% {
+    transform: translateX(-38vw) translateY(-29vh) scale(0.37); }
+  5% {
+    transform: translateX(37vw) translateY(-25vh) scale(0.84); }
+  10% {
+    transform: translateX(-28vw) translateY(-25vh) scale(0.98); }
+  15% {
+    transform: translateX(10vw) translateY(-9vh) scale(0.71); }
+  20% {
+    transform: translateX(18vw) translateY(31vh) scale(0.68); }
+  25% {
+    transform: translateX(-44vw) translateY(34vh) scale(0.84); }
+  30% {
+    transform: translateX(-24vw) translateY(-24vh) scale(0.51); }
+  35% {
+    transform: translateX(4vw) translateY(-6vh) scale(0.92); }
+  40% {
+    transform: translateX(-12vw) translateY(-16vh) scale(0.87); }
+  45% {
+    transform: translateX(-15vw) translateY(14vh) scale(0.54); }
+  50% {
+    transform: translateX(33vw) translateY(27vh) scale(0.97); }
+  55% {
+    transform: translateX(1vw) translateY(38vh) scale(0.31); }
+  60% {
+    transform: translateX(49vw) translateY(-34vh) scale(0.83); }
+  65% {
+    transform: translateX(30vw) translateY(-19vh) scale(0.85); }
+  70% {
+    transform: translateX(-7vw) translateY(28vh) scale(0.3); }
+  75% {
+    transform: translateX(-4vw) translateY(13vh) scale(0.76); }
+  80% {
+    transform: translateX(-4vw) translateY(35vh) scale(0.74); }
+  85% {
+    transform: translateX(9vw) translateY(-31vh) scale(0.79); }
+  90% {
+    transform: translateX(10vw) translateY(30vh) scale(0.43); }
+  95% {
+    transform: translateX(20vw) translateY(1vh) scale(0.95); }
+  100% {
+    transform: translateX(-11vw) translateY(21vh) scale(0.45); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(9) {
+  animation-name: move9; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(9)::before {
+    animation-duration: 16s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(9)::after {
+    animation-duration: 16s, 9729ms;
+    animation-delay: 0ms, 2121ms; }
+
+@keyframes move9 {
+  0% {
+    transform: translateX(32vw) translateY(-29vh) scale(0.88); }
+  5.88235% {
+    transform: translateX(46vw) translateY(-3vh) scale(0.69); }
+  11.76471% {
+    transform: translateX(-8vw) translateY(-4vh) scale(0.38); }
+  17.64706% {
+    transform: translateX(-12vw) translateY(32vh) scale(0.9); }
+  23.52941% {
+    transform: translateX(-30vw) translateY(-22vh) scale(0.74); }
+  29.41176% {
+    transform: translateX(-42vw) translateY(-33vh) scale(0.65); }
+  35.29412% {
+    transform: translateX(-37vw) translateY(25vh) scale(0.59); }
+  41.17647% {
+    transform: translateX(-45vw) translateY(-17vh) scale(0.67); }
+  47.05882% {
+    transform: translateX(17vw) translateY(25vh) scale(0.57); }
+  52.94118% {
+    transform: translateX(-24vw) translateY(-10vh) scale(0.33); }
+  58.82353% {
+    transform: translateX(18vw) translateY(31vh) scale(0.79); }
+  64.70588% {
+    transform: translateX(-37vw) translateY(12vh) scale(0.69); }
+  70.58824% {
+    transform: translateX(49vw) translateY(7vh) scale(0.85); }
+  76.47059% {
+    transform: translateX(-39vw) translateY(-15vh) scale(0.27); }
+  82.35294% {
+    transform: translateX(27vw) translateY(31vh) scale(0.88); }
+  88.23529% {
+    transform: translateX(27vw) translateY(50vh) scale(0.92); }
+  94.11765% {
+    transform: translateX(21vw) translateY(-16vh) scale(0.64); }
+  100% {
+    transform: translateX(36vw) translateY(-29vh) scale(0.89); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(10) {
+  animation-name: move10; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(10)::before {
+    animation-duration: 15s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(10)::after {
+    animation-duration: 15s, 8264ms;
+    animation-delay: 0ms, 5567ms; }
+
+@keyframes move10 {
+  0% {
+    transform: translateX(5vw) translateY(-27vh) scale(0.52); }
+  4.16667% {
+    transform: translateX(-29vw) translateY(-8vh) scale(0.27); }
+  8.33333% {
+    transform: translateX(-25vw) translateY(9vh) scale(0.75); }
+  12.5% {
+    transform: translateX(31vw) translateY(-48vh) scale(0.85); }
+  16.66667% {
+    transform: translateX(-1vw) translateY(44vh) scale(0.83); }
+  20.83333% {
+    transform: translateX(33vw) translateY(29vh) scale(0.59); }
+  25% {
+    transform: translateX(38vw) translateY(-39vh) scale(0.31); }
+  29.16667% {
+    transform: translateX(2vw) translateY(-20vh) scale(0.52); }
+  33.33333% {
+    transform: translateX(-1vw) translateY(0vh) scale(0.64); }
+  37.5% {
+    transform: translateX(-22vw) translateY(17vh) scale(0.58); }
+  41.66667% {
+    transform: translateX(0vw) translateY(-44vh) scale(0.46); }
+  45.83333% {
+    transform: translateX(-4vw) translateY(-10vh) scale(0.78); }
+  50% {
+    transform: translateX(30vw) translateY(-31vh) scale(0.39); }
+  54.16667% {
+    transform: translateX(-35vw) translateY(-22vh) scale(0.45); }
+  58.33333% {
+    transform: translateX(-43vw) translateY(-7vh) scale(0.97); }
+  62.5% {
+    transform: translateX(28vw) translateY(-12vh) scale(0.77); }
+  66.66667% {
+    transform: translateX(-21vw) translateY(-42vh) scale(0.35); }
+  70.83333% {
+    transform: translateX(-18vw) translateY(29vh) scale(0.29); }
+  75% {
+    transform: translateX(4vw) translateY(-35vh) scale(0.37); }
+  79.16667% {
+    transform: translateX(-44vw) translateY(18vh) scale(0.98); }
+  83.33333% {
+    transform: translateX(2vw) translateY(-7vh) scale(1); }
+  87.5% {
+    transform: translateX(-13vw) translateY(46vh) scale(0.85); }
+  91.66667% {
+    transform: translateX(-37vw) translateY(-15vh) scale(0.55); }
+  95.83333% {
+    transform: translateX(4vw) translateY(36vh) scale(0.44); }
+  100% {
+    transform: translateX(43vw) translateY(25vh) scale(0.47); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(11) {
+  animation-name: move11; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(11)::before {
+    animation-duration: 14s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(11)::after {
+    animation-duration: 14s, 5793ms;
+    animation-delay: 0ms, 1716ms; }
+
+@keyframes move11 {
+  0% {
+    transform: translateX(-25vw) translateY(-2vh) scale(0.33); }
+  4.34783% {
+    transform: translateX(16vw) translateY(12vh) scale(0.56); }
+  8.69565% {
+    transform: translateX(28vw) translateY(21vh) scale(0.64); }
+  13.04348% {
+    transform: translateX(40vw) translateY(49vh) scale(0.69); }
+  17.3913% {
+    transform: translateX(-3vw) translateY(-47vh) scale(0.77); }
+  21.73913% {
+    transform: translateX(-36vw) translateY(13vh) scale(0.28); }
+  26.08696% {
+    transform: translateX(10vw) translateY(19vh) scale(0.53); }
+  30.43478% {
+    transform: translateX(49vw) translateY(23vh) scale(0.67); }
+  34.78261% {
+    transform: translateX(14vw) translateY(20vh) scale(0.94); }
+  39.13043% {
+    transform: translateX(42vw) translateY(16vh) scale(0.9); }
+  43.47826% {
+    transform: translateX(-29vw) translateY(38vh) scale(0.84); }
+  47.82609% {
+    transform: translateX(-24vw) translateY(-8vh) scale(0.98); }
+  52.17391% {
+    transform: translateX(43vw) translateY(23vh) scale(0.75); }
+  56.52174% {
+    transform: translateX(-18vw) translateY(-27vh) scale(0.99); }
+  60.86957% {
+    transform: translateX(-15vw) translateY(-29vh) scale(0.92); }
+  65.21739% {
+    transform: translateX(48vw) translateY(4vh) scale(0.5); }
+  69.56522% {
+    transform: translateX(13vw) translateY(-17vh) scale(0.34); }
+  73.91304% {
+    transform: translateX(-45vw) translateY(33vh) scale(0.43); }
+  78.26087% {
+    transform: translateX(-39vw) translateY(30vh) scale(0.48); }
+  82.6087% {
+    transform: translateX(42vw) translateY(43vh) scale(0.27); }
+  86.95652% {
+    transform: translateX(-49vw) translateY(44vh) scale(0.76); }
+  91.30435% {
+    transform: translateX(-44vw) translateY(-25vh) scale(0.51); }
+  95.65217% {
+    transform: translateX(-37vw) translateY(-42vh) scale(0.59); }
+  100% {
+    transform: translateX(31vw) translateY(7vh) scale(0.92); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(12) {
+  animation-name: move12; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(12)::before {
+    animation-duration: 9s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(12)::after {
+    animation-duration: 9s, 6191ms;
+    animation-delay: 0ms, 3059ms; }
+
+@keyframes move12 {
+  0% {
+    transform: translateX(21vw) translateY(-7vh) scale(0.66); }
+  3.84615% {
+    transform: translateX(10vw) translateY(-12vh) scale(0.82); }
+  7.69231% {
+    transform: translateX(40vw) translateY(39vh) scale(0.64); }
+  11.53846% {
+    transform: translateX(38vw) translateY(18vh) scale(0.32); }
+  15.38462% {
+    transform: translateX(22vw) translateY(-38vh) scale(0.46); }
+  19.23077% {
+    transform: translateX(-27vw) translateY(37vh) scale(0.95); }
+  23.07692% {
+    transform: translateX(-44vw) translateY(-41vh) scale(0.6); }
+  26.92308% {
+    transform: translateX(-27vw) translateY(-15vh) scale(0.31); }
+  30.76923% {
+    transform: translateX(13vw) translateY(48vh) scale(0.37); }
+  34.61538% {
+    transform: translateX(29vw) translateY(-25vh) scale(0.44); }
+  38.46154% {
+    transform: translateX(-37vw) translateY(15vh) scale(0.87); }
+  42.30769% {
+    transform: translateX(-35vw) translateY(-6vh) scale(0.86); }
+  46.15385% {
+    transform: translateX(-6vw) translateY(24vh) scale(0.62); }
+  50% {
+    transform: translateX(-4vw) translateY(9vh) scale(0.91); }
+  53.84615% {
+    transform: translateX(21vw) translateY(-32vh) scale(0.44); }
+  57.69231% {
+    transform: translateX(15vw) translateY(-38vh) scale(0.86); }
+  61.53846% {
+    transform: translateX(40vw) translateY(22vh) scale(0.72); }
+  65.38462% {
+    transform: translateX(3vw) translateY(4vh) scale(0.55); }
+  69.23077% {
+    transform: translateX(22vw) translateY(-2vh) scale(0.41); }
+  73.07692% {
+    transform: translateX(13vw) translateY(-1vh) scale(0.61); }
+  76.92308% {
+    transform: translateX(-28vw) translateY(-3vh) scale(0.29); }
+  80.76923% {
+    transform: translateX(43vw) translateY(-22vh) scale(0.45); }
+  84.61538% {
+    transform: translateX(-1vw) translateY(11vh) scale(0.52); }
+  88.46154% {
+    transform: translateX(-4vw) translateY(-4vh) scale(0.71); }
+  92.30769% {
+    transform: translateX(-3vw) translateY(-43vh) scale(0.61); }
+  96.15385% {
+    transform: translateX(18vw) translateY(-11vh) scale(0.77); }
+  100% {
+    transform: translateX(46vw) translateY(19vh) scale(0.44); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(13) {
+  animation-name: move13; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(13)::before {
+    animation-duration: 15s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(13)::after {
+    animation-duration: 15s, 7275ms;
+    animation-delay: 0ms, 4536ms; }
+
+@keyframes move13 {
+  0% {
+    transform: translateX(1vw) translateY(-10vh) scale(0.47); }
+  4% {
+    transform: translateX(-6vw) translateY(-7vh) scale(0.45); }
+  8% {
+    transform: translateX(22vw) translateY(-28vh) scale(0.63); }
+  12% {
+    transform: translateX(6vw) translateY(-31vh) scale(0.41); }
+  16% {
+    transform: translateX(-33vw) translateY(-17vh) scale(0.28); }
+  20% {
+    transform: translateX(-20vw) translateY(21vh) scale(0.49); }
+  24% {
+    transform: translateX(46vw) translateY(-37vh) scale(0.48); }
+  28% {
+    transform: translateX(31vw) translateY(35vh) scale(0.86); }
+  32% {
+    transform: translateX(1vw) translateY(-2vh) scale(0.59); }
+  36% {
+    transform: translateX(-14vw) translateY(-27vh) scale(0.51); }
+  40% {
+    transform: translateX(1vw) translateY(-47vh) scale(0.43); }
+  44% {
+    transform: translateX(30vw) translateY(4vh) scale(0.91); }
+  48% {
+    transform: translateX(-20vw) translateY(-13vh) scale(0.97); }
+  52% {
+    transform: translateX(-35vw) translateY(-47vh) scale(0.38); }
+  56% {
+    transform: translateX(32vw) translateY(32vh) scale(0.58); }
+  60% {
+    transform: translateX(-11vw) translateY(-20vh) scale(0.72); }
+  64% {
+    transform: translateX(-32vw) translateY(-40vh) scale(0.84); }
+  68% {
+    transform: translateX(-17vw) translateY(39vh) scale(0.26); }
+  72% {
+    transform: translateX(50vw) translateY(12vh) scale(0.37); }
+  76% {
+    transform: translateX(12vw) translateY(-44vh) scale(0.77); }
+  80% {
+    transform: translateX(15vw) translateY(26vh) scale(0.74); }
+  84% {
+    transform: translateX(42vw) translateY(-9vh) scale(0.89); }
+  88% {
+    transform: translateX(18vw) translateY(-36vh) scale(0.32); }
+  92% {
+    transform: translateX(30vw) translateY(-26vh) scale(0.3); }
+  96% {
+    transform: translateX(16vw) translateY(33vh) scale(0.86); }
+  100% {
+    transform: translateX(-18vw) translateY(-34vh) scale(0.31); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(14) {
+  animation-name: move14; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(14)::before {
+    animation-duration: 11s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(14)::after {
+    animation-duration: 11s, 9397ms;
+    animation-delay: 0ms, 2061ms; }
+
+@keyframes move14 {
+  0% {
+    transform: translateX(11vw) translateY(-37vh) scale(0.63); }
+  3.57143% {
+    transform: translateX(49vw) translateY(16vh) scale(0.68); }
+  7.14286% {
+    transform: translateX(-3vw) translateY(17vh) scale(0.96); }
+  10.71429% {
+    transform: translateX(-21vw) translateY(-4vh) scale(0.92); }
+  14.28571% {
+    transform: translateX(9vw) translateY(-9vh) scale(0.56); }
+  17.85714% {
+    transform: translateX(12vw) translateY(21vh) scale(0.91); }
+  21.42857% {
+    transform: translateX(-42vw) translateY(22vh) scale(0.76); }
+  25% {
+    transform: translateX(-45vw) translateY(-23vh) scale(0.29); }
+  28.57143% {
+    transform: translateX(-25vw) translateY(-24vh) scale(0.95); }
+  32.14286% {
+    transform: translateX(7vw) translateY(-4vh) scale(0.81); }
+  35.71429% {
+    transform: translateX(-21vw) translateY(-13vh) scale(0.71); }
+  39.28571% {
+    transform: translateX(36vw) translateY(-21vh) scale(0.55); }
+  42.85714% {
+    transform: translateX(19vw) translateY(48vh) scale(0.39); }
+  46.42857% {
+    transform: translateX(-8vw) translateY(48vh) scale(0.48); }
+  50% {
+    transform: translateX(30vw) translateY(22vh) scale(0.53); }
+  53.57143% {
+    transform: translateX(-29vw) translateY(-1vh) scale(0.34); }
+  57.14286% {
+    transform: translateX(29vw) translateY(23vh) scale(0.95); }
+  60.71429% {
+    transform: translateX(17vw) translateY(-31vh) scale(0.38); }
+  64.28571% {
+    transform: translateX(-31vw) translateY(32vh) scale(0.72); }
+  67.85714% {
+    transform: translateX(45vw) translateY(-29vh) scale(0.92); }
+  71.42857% {
+    transform: translateX(-6vw) translateY(13vh) scale(0.74); }
+  75% {
+    transform: translateX(15vw) translateY(1vh) scale(0.88); }
+  78.57143% {
+    transform: translateX(47vw) translateY(-11vh) scale(0.36); }
+  82.14286% {
+    transform: translateX(11vw) translateY(-15vh) scale(0.58); }
+  85.71429% {
+    transform: translateX(-21vw) translateY(22vh) scale(0.94); }
+  89.28571% {
+    transform: translateX(21vw) translateY(-29vh) scale(0.32); }
+  92.85714% {
+    transform: translateX(18vw) translateY(-45vh) scale(0.77); }
+  96.42857% {
+    transform: translateX(36vw) translateY(-9vh) scale(0.34); }
+  100% {
+    transform: translateX(19vw) translateY(15vh) scale(0.88); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(15) {
+  animation-name: move15; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(15)::before {
+    animation-duration: 14s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(15)::after {
+    animation-duration: 14s, 8300ms;
+    animation-delay: 0ms, 1187ms; }
+
+@keyframes move15 {
+  0% {
+    transform: translateX(-33vw) translateY(-41vh) scale(0.9); }
+  5% {
+    transform: translateX(19vw) translateY(6vh) scale(0.29); }
+  10% {
+    transform: translateX(39vw) translateY(31vh) scale(0.54); }
+  15% {
+    transform: translateX(-8vw) translateY(-2vh) scale(0.9); }
+  20% {
+    transform: translateX(-29vw) translateY(-29vh) scale(0.49); }
+  25% {
+    transform: translateX(-12vw) translateY(6vh) scale(0.61); }
+  30% {
+    transform: translateX(9vw) translateY(38vh) scale(0.56); }
+  35% {
+    transform: translateX(-21vw) translateY(-3vh) scale(0.6); }
+  40% {
+    transform: translateX(-44vw) translateY(-28vh) scale(0.94); }
+  45% {
+    transform: translateX(26vw) translateY(9vh) scale(0.26); }
+  50% {
+    transform: translateX(-36vw) translateY(7vh) scale(0.42); }
+  55% {
+    transform: translateX(49vw) translateY(44vh) scale(0.78); }
+  60% {
+    transform: translateX(41vw) translateY(10vh) scale(0.89); }
+  65% {
+    transform: translateX(27vw) translateY(5vh) scale(0.49); }
+  70% {
+    transform: translateX(37vw) translateY(-21vh) scale(0.51); }
+  75% {
+    transform: translateX(-39vw) translateY(-3vh) scale(0.3); }
+  80% {
+    transform: translateX(36vw) translateY(45vh) scale(0.97); }
+  85% {
+    transform: translateX(-5vw) translateY(-3vh) scale(0.39); }
+  90% {
+    transform: translateX(43vw) translateY(-36vh) scale(0.61); }
+  95% {
+    transform: translateX(-40vw) translateY(19vh) scale(0.68); }
+  100% {
+    transform: translateX(13vw) translateY(-5vh) scale(0.81); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(16) {
+  animation-name: move16; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(16)::before {
+    animation-duration: 12s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(16)::after {
+    animation-duration: 12s, 10564ms;
+    animation-delay: 0ms, 3820ms; }
+
+@keyframes move16 {
+  0% {
+    transform: translateX(1vw) translateY(17vh) scale(0.6); }
+  4% {
+    transform: translateX(3vw) translateY(31vh) scale(0.94); }
+  8% {
+    transform: translateX(-5vw) translateY(-34vh) scale(0.63); }
+  12% {
+    transform: translateX(-41vw) translateY(-37vh) scale(0.75); }
+  16% {
+    transform: translateX(-11vw) translateY(-11vh) scale(0.65); }
+  20% {
+    transform: translateX(-17vw) translateY(-48vh) scale(0.86); }
+  24% {
+    transform: translateX(-1vw) translateY(-45vh) scale(0.28); }
+  28% {
+    transform: translateX(-40vw) translateY(-1vh) scale(0.65); }
+  32% {
+    transform: translateX(28vw) translateY(29vh) scale(0.28); }
+  36% {
+    transform: translateX(-38vw) translateY(-11vh) scale(0.96); }
+  40% {
+    transform: translateX(1vw) translateY(-35vh) scale(0.54); }
+  44% {
+    transform: translateX(-30vw) translateY(44vh) scale(0.32); }
+  48% {
+    transform: translateX(-4vw) translateY(27vh) scale(0.39); }
+  52% {
+    transform: translateX(26vw) translateY(35vh) scale(0.68); }
+  56% {
+    transform: translateX(-10vw) translateY(47vh) scale(0.4); }
+  60% {
+    transform: translateX(29vw) translateY(-9vh) scale(0.81); }
+  64% {
+    transform: translateX(-24vw) translateY(-2vh) scale(0.79); }
+  68% {
+    transform: translateX(33vw) translateY(35vh) scale(0.49); }
+  72% {
+    transform: translateX(42vw) translateY(38vh) scale(0.58); }
+  76% {
+    transform: translateX(44vw) translateY(-48vh) scale(0.43); }
+  80% {
+    transform: translateX(1vw) translateY(-7vh) scale(0.3); }
+  84% {
+    transform: translateX(3vw) translateY(15vh) scale(0.53); }
+  88% {
+    transform: translateX(37vw) translateY(43vh) scale(0.7); }
+  92% {
+    transform: translateX(-17vw) translateY(35vh) scale(0.73); }
+  96% {
+    transform: translateX(29vw) translateY(-38vh) scale(0.49); }
+  100% {
+    transform: translateX(-27vw) translateY(-42vh) scale(0.37); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(17) {
+  animation-name: move17; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(17)::before {
+    animation-duration: 11s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(17)::after {
+    animation-duration: 11s, 8495ms;
+    animation-delay: 0ms, 1011ms; }
+
+@keyframes move17 {
+  0% {
+    transform: translateX(-31vw) translateY(-48vh) scale(0.47); }
+  5.55556% {
+    transform: translateX(35vw) translateY(35vh) scale(0.35); }
+  11.11111% {
+    transform: translateX(21vw) translateY(33vh) scale(0.91); }
+  16.66667% {
+    transform: translateX(-28vw) translateY(-37vh) scale(0.56); }
+  22.22222% {
+    transform: translateX(32vw) translateY(-39vh) scale(0.72); }
+  27.77778% {
+    transform: translateX(-31vw) translateY(0vh) scale(0.75); }
+  33.33333% {
+    transform: translateX(45vw) translateY(-36vh) scale(0.91); }
+  38.88889% {
+    transform: translateX(-8vw) translateY(12vh) scale(0.54); }
+  44.44444% {
+    transform: translateX(-4vw) translateY(41vh) scale(0.77); }
+  50% {
+    transform: translateX(-20vw) translateY(-14vh) scale(0.28); }
+  55.55556% {
+    transform: translateX(-19vw) translateY(9vh) scale(0.28); }
+  61.11111% {
+    transform: translateX(-18vw) translateY(24vh) scale(0.98); }
+  66.66667% {
+    transform: translateX(-41vw) translateY(-3vh) scale(0.75); }
+  72.22222% {
+    transform: translateX(-8vw) translateY(19vh) scale(0.83); }
+  77.77778% {
+    transform: translateX(3vw) translateY(-18vh) scale(0.93); }
+  83.33333% {
+    transform: translateX(-23vw) translateY(-45vh) scale(0.56); }
+  88.88889% {
+    transform: translateX(37vw) translateY(-24vh) scale(0.91); }
+  94.44444% {
+    transform: translateX(26vw) translateY(48vh) scale(0.96); }
+  100% {
+    transform: translateX(48vw) translateY(-19vh) scale(0.39); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(18) {
+  animation-name: move18; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(18)::before {
+    animation-duration: 9s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(18)::after {
+    animation-duration: 9s, 8131ms;
+    animation-delay: 0ms, 5531ms; }
+
+@keyframes move18 {
+  0% {
+    transform: translateX(-12vw) translateY(-39vh) scale(0.68); }
+  3.7037% {
+    transform: translateX(-22vw) translateY(-36vh) scale(0.66); }
+  7.40741% {
+    transform: translateX(5vw) translateY(-27vh) scale(0.77); }
+  11.11111% {
+    transform: translateX(-28vw) translateY(17vh) scale(0.85); }
+  14.81481% {
+    transform: translateX(-22vw) translateY(-40vh) scale(0.95); }
+  18.51852% {
+    transform: translateX(-49vw) translateY(37vh) scale(0.39); }
+  22.22222% {
+    transform: translateX(16vw) translateY(11vh) scale(0.6); }
+  25.92593% {
+    transform: translateX(6vw) translateY(-31vh) scale(0.59); }
+  29.62963% {
+    transform: translateX(14vw) translateY(2vh) scale(0.86); }
+  33.33333% {
+    transform: translateX(45vw) translateY(-49vh) scale(0.54); }
+  37.03704% {
+    transform: translateX(20vw) translateY(-13vh) scale(0.54); }
+  40.74074% {
+    transform: translateX(1vw) translateY(50vh) scale(0.38); }
+  44.44444% {
+    transform: translateX(-15vw) translateY(19vh) scale(0.42); }
+  48.14815% {
+    transform: translateX(10vw) translateY(5vh) scale(0.9); }
+  51.85185% {
+    transform: translateX(7vw) translateY(41vh) scale(0.57); }
+  55.55556% {
+    transform: translateX(29vw) translateY(1vh) scale(0.55); }
+  59.25926% {
+    transform: translateX(-24vw) translateY(0vh) scale(0.46); }
+  62.96296% {
+    transform: translateX(-17vw) translateY(-25vh) scale(0.33); }
+  66.66667% {
+    transform: translateX(-25vw) translateY(33vh) scale(0.55); }
+  70.37037% {
+    transform: translateX(17vw) translateY(50vh) scale(0.86); }
+  74.07407% {
+    transform: translateX(47vw) translateY(30vh) scale(0.85); }
+  77.77778% {
+    transform: translateX(-30vw) translateY(38vh) scale(0.94); }
+  81.48148% {
+    transform: translateX(-7vw) translateY(7vh) scale(0.38); }
+  85.18519% {
+    transform: translateX(-25vw) translateY(6vh) scale(0.98); }
+  88.88889% {
+    transform: translateX(-20vw) translateY(-7vh) scale(0.35); }
+  92.59259% {
+    transform: translateX(6vw) translateY(-7vh) scale(0.41); }
+  96.2963% {
+    transform: translateX(39vw) translateY(14vh) scale(0.58); }
+  100% {
+    transform: translateX(-12vw) translateY(-21vh) scale(0.4); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(19) {
+  animation-name: move19; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(19)::before {
+    animation-duration: 17s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(19)::after {
+    animation-duration: 17s, 7351ms;
+    animation-delay: 0ms, 2801ms; }
+
+@keyframes move19 {
+  0% {
+    transform: translateX(-47vw) translateY(-41vh) scale(0.63); }
+  3.7037% {
+    transform: translateX(2vw) translateY(26vh) scale(0.61); }
+  7.40741% {
+    transform: translateX(31vw) translateY(7vh) scale(0.68); }
+  11.11111% {
+    transform: translateX(-3vw) translateY(25vh) scale(1); }
+  14.81481% {
+    transform: translateX(21vw) translateY(2vh) scale(0.32); }
+  18.51852% {
+    transform: translateX(48vw) translateY(39vh) scale(0.69); }
+  22.22222% {
+    transform: translateX(14vw) translateY(1vh) scale(0.69); }
+  25.92593% {
+    transform: translateX(-2vw) translateY(39vh) scale(0.67); }
+  29.62963% {
+    transform: translateX(-49vw) translateY(21vh) scale(0.76); }
+  33.33333% {
+    transform: translateX(12vw) translateY(31vh) scale(0.3); }
+  37.03704% {
+    transform: translateX(-20vw) translateY(-36vh) scale(0.92); }
+  40.74074% {
+    transform: translateX(-17vw) translateY(35vh) scale(0.62); }
+  44.44444% {
+    transform: translateX(-33vw) translateY(24vh) scale(0.38); }
+  48.14815% {
+    transform: translateX(-44vw) translateY(-49vh) scale(0.41); }
+  51.85185% {
+    transform: translateX(5vw) translateY(44vh) scale(0.87); }
+  55.55556% {
+    transform: translateX(20vw) translateY(-27vh) scale(0.28); }
+  59.25926% {
+    transform: translateX(32vw) translateY(-23vh) scale(0.64); }
+  62.96296% {
+    transform: translateX(27vw) translateY(38vh) scale(0.54); }
+  66.66667% {
+    transform: translateX(20vw) translateY(39vh) scale(0.68); }
+  70.37037% {
+    transform: translateX(28vw) translateY(-11vh) scale(0.42); }
+  74.07407% {
+    transform: translateX(-28vw) translateY(11vh) scale(0.35); }
+  77.77778% {
+    transform: translateX(-45vw) translateY(33vh) scale(0.27); }
+  81.48148% {
+    transform: translateX(42vw) translateY(-28vh) scale(0.35); }
+  85.18519% {
+    transform: translateX(-45vw) translateY(-43vh) scale(0.47); }
+  88.88889% {
+    transform: translateX(10vw) translateY(21vh) scale(0.33); }
+  92.59259% {
+    transform: translateX(-9vw) translateY(-28vh) scale(0.42); }
+  96.2963% {
+    transform: translateX(-5vw) translateY(10vh) scale(0.7); }
+  100% {
+    transform: translateX(-20vw) translateY(47vh) scale(0.42); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(20) {
+  animation-name: move20; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(20)::before {
+    animation-duration: 18s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(20)::after {
+    animation-duration: 18s, 7424ms;
+    animation-delay: 0ms, 5612ms; }
+
+@keyframes move20 {
+  0% {
+    transform: translateX(-29vw) translateY(-33vh) scale(0.64); }
+  5.88235% {
+    transform: translateX(0vw) translateY(6vh) scale(0.88); }
+  11.76471% {
+    transform: translateX(24vw) translateY(31vh) scale(0.34); }
+  17.64706% {
+    transform: translateX(-17vw) translateY(-22vh) scale(1); }
+  23.52941% {
+    transform: translateX(-35vw) translateY(-13vh) scale(0.89); }
+  29.41176% {
+    transform: translateX(32vw) translateY(-25vh) scale(0.43); }
+  35.29412% {
+    transform: translateX(12vw) translateY(-2vh) scale(0.27); }
+  41.17647% {
+    transform: translateX(40vw) translateY(-19vh) scale(0.4); }
+  47.05882% {
+    transform: translateX(-23vw) translateY(12vh) scale(0.5); }
+  52.94118% {
+    transform: translateX(49vw) translateY(-27vh) scale(0.28); }
+  58.82353% {
+    transform: translateX(4vw) translateY(-30vh) scale(0.46); }
+  64.70588% {
+    transform: translateX(3vw) translateY(0vh) scale(0.88); }
+  70.58824% {
+    transform: translateX(35vw) translateY(27vh) scale(0.67); }
+  76.47059% {
+    transform: translateX(43vw) translateY(0vh) scale(0.88); }
+  82.35294% {
+    transform: translateX(41vw) translateY(-15vh) scale(0.4); }
+  88.23529% {
+    transform: translateX(-21vw) translateY(23vh) scale(0.43); }
+  94.11765% {
+    transform: translateX(5vw) translateY(-28vh) scale(0.27); }
+  100% {
+    transform: translateX(-18vw) translateY(35vh) scale(0.42); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(21) {
+  animation-name: move21; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(21)::before {
+    animation-duration: 17s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(21)::after {
+    animation-duration: 17s, 9836ms;
+    animation-delay: 0ms, 7869ms; }
+
+@keyframes move21 {
+  0% {
+    transform: translateX(43vw) translateY(24vh) scale(0.54); }
+  5.26316% {
+    transform: translateX(-40vw) translateY(-25vh) scale(0.86); }
+  10.52632% {
+    transform: translateX(19vw) translateY(-15vh) scale(0.54); }
+  15.78947% {
+    transform: translateX(4vw) translateY(-7vh) scale(0.68); }
+  21.05263% {
+    transform: translateX(50vw) translateY(26vh) scale(0.84); }
+  26.31579% {
+    transform: translateX(-42vw) translateY(-42vh) scale(0.75); }
+  31.57895% {
+    transform: translateX(-27vw) translateY(10vh) scale(0.91); }
+  36.84211% {
+    transform: translateX(-21vw) translateY(5vh) scale(0.27); }
+  42.10526% {
+    transform: translateX(47vw) translateY(-36vh) scale(0.85); }
+  47.36842% {
+    transform: translateX(19vw) translateY(-4vh) scale(0.7); }
+  52.63158% {
+    transform: translateX(-31vw) translateY(45vh) scale(0.49); }
+  57.89474% {
+    transform: translateX(30vw) translateY(-47vh) scale(0.41); }
+  63.15789% {
+    transform: translateX(-45vw) translateY(-3vh) scale(0.48); }
+  68.42105% {
+    transform: translateX(20vw) translateY(-33vh) scale(0.63); }
+  73.68421% {
+    transform: translateX(11vw) translateY(-17vh) scale(0.64); }
+  78.94737% {
+    transform: translateX(6vw) translateY(41vh) scale(0.46); }
+  84.21053% {
+    transform: translateX(3vw) translateY(20vh) scale(0.88); }
+  89.47368% {
+    transform: translateX(-20vw) translateY(18vh) scale(0.41); }
+  94.73684% {
+    transform: translateX(-18vw) translateY(-15vh) scale(0.82); }
+  100% {
+    transform: translateX(-7vw) translateY(8vh) scale(0.97); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(22) {
+  animation-name: move22; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(22)::before {
+    animation-duration: 18s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(22)::after {
+    animation-duration: 18s, 5236ms;
+    animation-delay: 0ms, 1863ms; }
+
+@keyframes move22 {
+  0% {
+    transform: translateX(-9vw) translateY(-42vh) scale(0.82); }
+  4% {
+    transform: translateX(14vw) translateY(33vh) scale(0.4); }
+  8% {
+    transform: translateX(33vw) translateY(1vh) scale(0.45); }
+  12% {
+    transform: translateX(36vw) translateY(-12vh) scale(0.52); }
+  16% {
+    transform: translateX(50vw) translateY(-45vh) scale(0.51); }
+  20% {
+    transform: translateX(-47vw) translateY(20vh) scale(0.6); }
+  24% {
+    transform: translateX(-41vw) translateY(-10vh) scale(0.46); }
+  28% {
+    transform: translateX(-19vw) translateY(-49vh) scale(0.76); }
+  32% {
+    transform: translateX(18vw) translateY(-47vh) scale(0.81); }
+  36% {
+    transform: translateX(-2vw) translateY(2vh) scale(0.58); }
+  40% {
+    transform: translateX(-34vw) translateY(-29vh) scale(0.61); }
+  44% {
+    transform: translateX(22vw) translateY(49vh) scale(0.8); }
+  48% {
+    transform: translateX(-4vw) translateY(-46vh) scale(0.72); }
+  52% {
+    transform: translateX(11vw) translateY(30vh) scale(0.27); }
+  56% {
+    transform: translateX(39vw) translateY(-28vh) scale(0.95); }
+  60% {
+    transform: translateX(22vw) translateY(-5vh) scale(0.73); }
+  64% {
+    transform: translateX(-27vw) translateY(26vh) scale(0.82); }
+  68% {
+    transform: translateX(-24vw) translateY(41vh) scale(0.69); }
+  72% {
+    transform: translateX(31vw) translateY(-36vh) scale(0.26); }
+  76% {
+    transform: translateX(-7vw) translateY(35vh) scale(0.96); }
+  80% {
+    transform: translateX(41vw) translateY(16vh) scale(0.43); }
+  84% {
+    transform: translateX(-24vw) translateY(-43vh) scale(0.26); }
+  88% {
+    transform: translateX(-38vw) translateY(-4vh) scale(0.63); }
+  92% {
+    transform: translateX(5vw) translateY(41vh) scale(0.56); }
+  96% {
+    transform: translateX(-9vw) translateY(37vh) scale(0.31); }
+  100% {
+    transform: translateX(19vw) translateY(-39vh) scale(0.98); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(23) {
+  animation-name: move23; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(23)::before {
+    animation-duration: 17s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(23)::after {
+    animation-duration: 17s, 5580ms;
+    animation-delay: 0ms, 1430ms; }
+
+@keyframes move23 {
+  0% {
+    transform: translateX(17vw) translateY(-16vh) scale(0.72); }
+  4.54545% {
+    transform: translateX(26vw) translateY(-11vh) scale(0.56); }
+  9.09091% {
+    transform: translateX(32vw) translateY(23vh) scale(0.26); }
+  13.63636% {
+    transform: translateX(13vw) translateY(-23vh) scale(0.4); }
+  18.18182% {
+    transform: translateX(-20vw) translateY(-14vh) scale(0.97); }
+  22.72727% {
+    transform: translateX(-22vw) translateY(36vh) scale(0.59); }
+  27.27273% {
+    transform: translateX(-12vw) translateY(-21vh) scale(0.36); }
+  31.81818% {
+    transform: translateX(-41vw) translateY(-26vh) scale(0.84); }
+  36.36364% {
+    transform: translateX(-9vw) translateY(-10vh) scale(0.93); }
+  40.90909% {
+    transform: translateX(-22vw) translateY(27vh) scale(0.92); }
+  45.45455% {
+    transform: translateX(12vw) translateY(44vh) scale(0.84); }
+  50% {
+    transform: translateX(36vw) translateY(10vh) scale(0.6); }
+  54.54545% {
+    transform: translateX(24vw) translateY(-19vh) scale(0.39); }
+  59.09091% {
+    transform: translateX(-33vw) translateY(21vh) scale(0.93); }
+  63.63636% {
+    transform: translateX(-38vw) translateY(-48vh) scale(0.28); }
+  68.18182% {
+    transform: translateX(-4vw) translateY(49vh) scale(0.37); }
+  72.72727% {
+    transform: translateX(-7vw) translateY(-10vh) scale(0.45); }
+  77.27273% {
+    transform: translateX(-13vw) translateY(35vh) scale(0.52); }
+  81.81818% {
+    transform: translateX(18vw) translateY(35vh) scale(0.97); }
+  86.36364% {
+    transform: translateX(-41vw) translateY(6vh) scale(0.6); }
+  90.90909% {
+    transform: translateX(-28vw) translateY(-14vh) scale(0.92); }
+  95.45455% {
+    transform: translateX(20vw) translateY(14vh) scale(0.72); }
+  100% {
+    transform: translateX(45vw) translateY(-25vh) scale(0.83); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(24) {
+  animation-name: move24; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(24)::before {
+    animation-duration: 14s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(24)::after {
+    animation-duration: 14s, 5019ms;
+    animation-delay: 0ms, 5568ms; }
+
+@keyframes move24 {
+  0% {
+    transform: translateX(-5vw) translateY(6vh) scale(0.7); }
+  4.34783% {
+    transform: translateX(49vw) translateY(39vh) scale(0.97); }
+  8.69565% {
+    transform: translateX(-45vw) translateY(39vh) scale(0.79); }
+  13.04348% {
+    transform: translateX(25vw) translateY(11vh) scale(0.41); }
+  17.3913% {
+    transform: translateX(-18vw) translateY(13vh) scale(0.86); }
+  21.73913% {
+    transform: translateX(-30vw) translateY(-12vh) scale(0.68); }
+  26.08696% {
+    transform: translateX(20vw) translateY(45vh) scale(0.52); }
+  30.43478% {
+    transform: translateX(-21vw) translateY(-23vh) scale(0.96); }
+  34.78261% {
+    transform: translateX(48vw) translateY(-12vh) scale(0.88); }
+  39.13043% {
+    transform: translateX(-45vw) translateY(-47vh) scale(0.33); }
+  43.47826% {
+    transform: translateX(-10vw) translateY(20vh) scale(0.93); }
+  47.82609% {
+    transform: translateX(-30vw) translateY(-25vh) scale(0.77); }
+  52.17391% {
+    transform: translateX(-36vw) translateY(-13vh) scale(0.83); }
+  56.52174% {
+    transform: translateX(47vw) translateY(18vh) scale(0.93); }
+  60.86957% {
+    transform: translateX(2vw) translateY(24vh) scale(0.61); }
+  65.21739% {
+    transform: translateX(-34vw) translateY(19vh) scale(0.84); }
+  69.56522% {
+    transform: translateX(16vw) translateY(-32vh) scale(0.27); }
+  73.91304% {
+    transform: translateX(38vw) translateY(5vh) scale(0.92); }
+  78.26087% {
+    transform: translateX(16vw) translateY(-43vh) scale(0.28); }
+  82.6087% {
+    transform: translateX(-11vw) translateY(-47vh) scale(0.92); }
+  86.95652% {
+    transform: translateX(-29vw) translateY(-3vh) scale(0.29); }
+  91.30435% {
+    transform: translateX(5vw) translateY(32vh) scale(0.47); }
+  95.65217% {
+    transform: translateX(32vw) translateY(-25vh) scale(0.57); }
+  100% {
+    transform: translateX(28vw) translateY(43vh) scale(0.62); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(25) {
+  animation-name: move25; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(25)::before {
+    animation-duration: 12s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(25)::after {
+    animation-duration: 12s, 10134ms;
+    animation-delay: 0ms, 5249ms; }
+
+@keyframes move25 {
+  0% {
+    transform: translateX(-11vw) translateY(-49vh) scale(0.65); }
+  4.7619% {
+    transform: translateX(-17vw) translateY(-36vh) scale(0.37); }
+  9.52381% {
+    transform: translateX(-27vw) translateY(25vh) scale(0.87); }
+  14.28571% {
+    transform: translateX(8vw) translateY(-6vh) scale(0.58); }
+  19.04762% {
+    transform: translateX(-6vw) translateY(15vh) scale(0.32); }
+  23.80952% {
+    transform: translateX(21vw) translateY(-48vh) scale(0.53); }
+  28.57143% {
+    transform: translateX(43vw) translateY(-9vh) scale(0.9); }
+  33.33333% {
+    transform: translateX(21vw) translateY(-5vh) scale(0.31); }
+  38.09524% {
+    transform: translateX(39vw) translateY(-27vh) scale(0.91); }
+  42.85714% {
+    transform: translateX(-43vw) translateY(37vh) scale(0.77); }
+  47.61905% {
+    transform: translateX(47vw) translateY(-36vh) scale(0.54); }
+  52.38095% {
+    transform: translateX(18vw) translateY(-46vh) scale(0.36); }
+  57.14286% {
+    transform: translateX(31vw) translateY(7vh) scale(0.46); }
+  61.90476% {
+    transform: translateX(-16vw) translateY(1vh) scale(0.56); }
+  66.66667% {
+    transform: translateX(-10vw) translateY(-22vh) scale(0.39); }
+  71.42857% {
+    transform: translateX(4vw) translateY(-8vh) scale(0.47); }
+  76.19048% {
+    transform: translateX(-46vw) translateY(37vh) scale(0.62); }
+  80.95238% {
+    transform: translateX(10vw) translateY(9vh) scale(0.8); }
+  85.71429% {
+    transform: translateX(7vw) translateY(5vh) scale(0.8); }
+  90.47619% {
+    transform: translateX(0vw) translateY(20vh) scale(0.62); }
+  95.2381% {
+    transform: translateX(26vw) translateY(32vh) scale(0.52); }
+  100% {
+    transform: translateX(-45vw) translateY(-34vh) scale(0.36); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(26) {
+  animation-name: move26; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(26)::before {
+    animation-duration: 10s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(26)::after {
+    animation-duration: 10s, 6408ms;
+    animation-delay: 0ms, 6353ms; }
+
+@keyframes move26 {
+  0% {
+    transform: translateX(11vw) translateY(8vh) scale(0.87); }
+  4.7619% {
+    transform: translateX(31vw) translateY(-40vh) scale(0.75); }
+  9.52381% {
+    transform: translateX(25vw) translateY(20vh) scale(0.39); }
+  14.28571% {
+    transform: translateX(-5vw) translateY(0vh) scale(0.77); }
+  19.04762% {
+    transform: translateX(-45vw) translateY(10vh) scale(0.72); }
+  23.80952% {
+    transform: translateX(-26vw) translateY(-19vh) scale(0.39); }
+  28.57143% {
+    transform: translateX(11vw) translateY(8vh) scale(0.92); }
+  33.33333% {
+    transform: translateX(44vw) translateY(35vh) scale(0.98); }
+  38.09524% {
+    transform: translateX(26vw) translateY(-24vh) scale(0.89); }
+  42.85714% {
+    transform: translateX(26vw) translateY(-35vh) scale(0.59); }
+  47.61905% {
+    transform: translateX(-33vw) translateY(-16vh) scale(0.59); }
+  52.38095% {
+    transform: translateX(22vw) translateY(-20vh) scale(0.87); }
+  57.14286% {
+    transform: translateX(-5vw) translateY(-37vh) scale(0.66); }
+  61.90476% {
+    transform: translateX(-11vw) translateY(-28vh) scale(0.97); }
+  66.66667% {
+    transform: translateX(-19vw) translateY(-33vh) scale(0.6); }
+  71.42857% {
+    transform: translateX(-14vw) translateY(-22vh) scale(0.26); }
+  76.19048% {
+    transform: translateX(-34vw) translateY(5vh) scale(0.34); }
+  80.95238% {
+    transform: translateX(36vw) translateY(-21vh) scale(0.27); }
+  85.71429% {
+    transform: translateX(-33vw) translateY(26vh) scale(0.29); }
+  90.47619% {
+    transform: translateX(37vw) translateY(41vh) scale(0.35); }
+  95.2381% {
+    transform: translateX(-48vw) translateY(46vh) scale(0.31); }
+  100% {
+    transform: translateX(3vw) translateY(-7vh) scale(0.74); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(27) {
+  animation-name: move27; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(27)::before {
+    animation-duration: 17s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(27)::after {
+    animation-duration: 17s, 9481ms;
+    animation-delay: 0ms, 5537ms; }
+
+@keyframes move27 {
+  0% {
+    transform: translateX(-35vw) translateY(-46vh) scale(0.97); }
+  3.7037% {
+    transform: translateX(7vw) translateY(40vh) scale(0.41); }
+  7.40741% {
+    transform: translateX(-27vw) translateY(-8vh) scale(0.52); }
+  11.11111% {
+    transform: translateX(-49vw) translateY(-33vh) scale(0.27); }
+  14.81481% {
+    transform: translateX(-12vw) translateY(-43vh) scale(0.5); }
+  18.51852% {
+    transform: translateX(16vw) translateY(-46vh) scale(0.96); }
+  22.22222% {
+    transform: translateX(39vw) translateY(22vh) scale(0.99); }
+  25.92593% {
+    transform: translateX(17vw) translateY(33vh) scale(0.66); }
+  29.62963% {
+    transform: translateX(-21vw) translateY(1vh) scale(0.99); }
+  33.33333% {
+    transform: translateX(-37vw) translateY(-1vh) scale(0.34); }
+  37.03704% {
+    transform: translateX(-9vw) translateY(-35vh) scale(0.76); }
+  40.74074% {
+    transform: translateX(15vw) translateY(-37vh) scale(0.95); }
+  44.44444% {
+    transform: translateX(17vw) translateY(34vh) scale(0.79); }
+  48.14815% {
+    transform: translateX(2vw) translateY(26vh) scale(0.26); }
+  51.85185% {
+    transform: translateX(48vw) translateY(-21vh) scale(0.38); }
+  55.55556% {
+    transform: translateX(7vw) translateY(-41vh) scale(0.45); }
+  59.25926% {
+    transform: translateX(27vw) translateY(3vh) scale(1); }
+  62.96296% {
+    transform: translateX(-36vw) translateY(-48vh) scale(0.85); }
+  66.66667% {
+    transform: translateX(46vw) translateY(43vh) scale(0.47); }
+  70.37037% {
+    transform: translateX(39vw) translateY(24vh) scale(0.36); }
+  74.07407% {
+    transform: translateX(15vw) translateY(21vh) scale(0.44); }
+  77.77778% {
+    transform: translateX(-22vw) translateY(40vh) scale(0.97); }
+  81.48148% {
+    transform: translateX(17vw) translateY(-48vh) scale(0.71); }
+  85.18519% {
+    transform: translateX(-7vw) translateY(-8vh) scale(0.8); }
+  88.88889% {
+    transform: translateX(45vw) translateY(-7vh) scale(0.83); }
+  92.59259% {
+    transform: translateX(25vw) translateY(31vh) scale(0.97); }
+  96.2963% {
+    transform: translateX(-49vw) translateY(-33vh) scale(1); }
+  100% {
+    transform: translateX(-27vw) translateY(-18vh) scale(0.44); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(28) {
+  animation-name: move28; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(28)::before {
+    animation-duration: 16s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(28)::after {
+    animation-duration: 16s, 8381ms;
+    animation-delay: 0ms, 4393ms; }
+
+@keyframes move28 {
+  0% {
+    transform: translateX(-24vw) translateY(11vh) scale(0.63); }
+  5.55556% {
+    transform: translateX(48vw) translateY(40vh) scale(0.81); }
+  11.11111% {
+    transform: translateX(-25vw) translateY(-23vh) scale(0.47); }
+  16.66667% {
+    transform: translateX(-2vw) translateY(31vh) scale(0.53); }
+  22.22222% {
+    transform: translateX(-34vw) translateY(38vh) scale(0.65); }
+  27.77778% {
+    transform: translateX(-35vw) translateY(-3vh) scale(0.37); }
+  33.33333% {
+    transform: translateX(23vw) translateY(-44vh) scale(0.53); }
+  38.88889% {
+    transform: translateX(-26vw) translateY(0vh) scale(0.62); }
+  44.44444% {
+    transform: translateX(-22vw) translateY(-7vh) scale(0.51); }
+  50% {
+    transform: translateX(-7vw) translateY(19vh) scale(0.86); }
+  55.55556% {
+    transform: translateX(-32vw) translateY(-18vh) scale(0.62); }
+  61.11111% {
+    transform: translateX(26vw) translateY(7vh) scale(0.81); }
+  66.66667% {
+    transform: translateX(-1vw) translateY(-38vh) scale(0.52); }
+  72.22222% {
+    transform: translateX(-32vw) translateY(-49vh) scale(0.68); }
+  77.77778% {
+    transform: translateX(27vw) translateY(-37vh) scale(0.27); }
+  83.33333% {
+    transform: translateX(-40vw) translateY(6vh) scale(0.26); }
+  88.88889% {
+    transform: translateX(-36vw) translateY(35vh) scale(0.77); }
+  94.44444% {
+    transform: translateX(45vw) translateY(-24vh) scale(0.79); }
+  100% {
+    transform: translateX(7vw) translateY(-42vh) scale(0.97); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(29) {
+  animation-name: move29; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(29)::before {
+    animation-duration: 16s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(29)::after {
+    animation-duration: 16s, 10846ms;
+    animation-delay: 0ms, 1909ms; }
+
+@keyframes move29 {
+  0% {
+    transform: translateX(21vw) translateY(0vh) scale(0.3); }
+  4.16667% {
+    transform: translateX(33vw) translateY(-31vh) scale(0.68); }
+  8.33333% {
+    transform: translateX(-18vw) translateY(-17vh) scale(0.37); }
+  12.5% {
+    transform: translateX(-32vw) translateY(42vh) scale(0.74); }
+  16.66667% {
+    transform: translateX(-15vw) translateY(1vh) scale(0.41); }
+  20.83333% {
+    transform: translateX(-5vw) translateY(19vh) scale(0.92); }
+  25% {
+    transform: translateX(-24vw) translateY(40vh) scale(0.78); }
+  29.16667% {
+    transform: translateX(-48vw) translateY(26vh) scale(0.28); }
+  33.33333% {
+    transform: translateX(-8vw) translateY(-3vh) scale(0.27); }
+  37.5% {
+    transform: translateX(22vw) translateY(-49vh) scale(0.42); }
+  41.66667% {
+    transform: translateX(39vw) translateY(-9vh) scale(0.38); }
+  45.83333% {
+    transform: translateX(-23vw) translateY(-42vh) scale(0.89); }
+  50% {
+    transform: translateX(25vw) translateY(30vh) scale(1); }
+  54.16667% {
+    transform: translateX(43vw) translateY(-9vh) scale(0.87); }
+  58.33333% {
+    transform: translateX(23vw) translateY(-25vh) scale(0.98); }
+  62.5% {
+    transform: translateX(23vw) translateY(-36vh) scale(0.68); }
+  66.66667% {
+    transform: translateX(47vw) translateY(1vh) scale(0.97); }
+  70.83333% {
+    transform: translateX(49vw) translateY(0vh) scale(0.4); }
+  75% {
+    transform: translateX(22vw) translateY(29vh) scale(0.99); }
+  79.16667% {
+    transform: translateX(-40vw) translateY(40vh) scale(0.42); }
+  83.33333% {
+    transform: translateX(-24vw) translateY(31vh) scale(0.66); }
+  87.5% {
+    transform: translateX(25vw) translateY(-38vh) scale(0.95); }
+  91.66667% {
+    transform: translateX(-43vw) translateY(-10vh) scale(0.63); }
+  95.83333% {
+    transform: translateX(34vw) translateY(-41vh) scale(1); }
+  100% {
+    transform: translateX(33vw) translateY(50vh) scale(0.73); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(30) {
+  animation-name: move30; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(30)::before {
+    animation-duration: 18s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(30)::after {
+    animation-duration: 18s, 7644ms;
+    animation-delay: 0ms, 6919ms; }
+
+@keyframes move30 {
+  0% {
+    transform: translateX(35vw) translateY(31vh) scale(0.67); }
+  5.26316% {
+    transform: translateX(20vw) translateY(5vh) scale(0.51); }
+  10.52632% {
+    transform: translateX(-6vw) translateY(-12vh) scale(0.78); }
+  15.78947% {
+    transform: translateX(-17vw) translateY(-35vh) scale(0.34); }
+  21.05263% {
+    transform: translateX(-22vw) translateY(20vh) scale(0.76); }
+  26.31579% {
+    transform: translateX(21vw) translateY(-18vh) scale(0.33); }
+  31.57895% {
+    transform: translateX(43vw) translateY(-32vh) scale(0.78); }
+  36.84211% {
+    transform: translateX(4vw) translateY(8vh) scale(0.39); }
+  42.10526% {
+    transform: translateX(50vw) translateY(2vh) scale(0.61); }
+  47.36842% {
+    transform: translateX(11vw) translateY(-11vh) scale(1); }
+  52.63158% {
+    transform: translateX(-4vw) translateY(-47vh) scale(0.95); }
+  57.89474% {
+    transform: translateX(8vw) translateY(-20vh) scale(0.4); }
+  63.15789% {
+    transform: translateX(-6vw) translateY(-10vh) scale(0.38); }
+  68.42105% {
+    transform: translateX(15vw) translateY(-47vh) scale(0.84); }
+  73.68421% {
+    transform: translateX(21vw) translateY(-23vh) scale(0.71); }
+  78.94737% {
+    transform: translateX(-15vw) translateY(34vh) scale(0.94); }
+  84.21053% {
+    transform: translateX(-17vw) translateY(-7vh) scale(0.55); }
+  89.47368% {
+    transform: translateX(49vw) translateY(0vh) scale(0.38); }
+  94.73684% {
+    transform: translateX(-29vw) translateY(-16vh) scale(0.99); }
+  100% {
+    transform: translateX(17vw) translateY(-14vh) scale(0.5); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(31) {
+  animation-name: move31; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(31)::before {
+    animation-duration: 12s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(31)::after {
+    animation-duration: 12s, 9720ms;
+    animation-delay: 0ms, 5506ms; }
+
+@keyframes move31 {
+  0% {
+    transform: translateX(-39vw) translateY(-20vh) scale(0.28); }
+  5.55556% {
+    transform: translateX(8vw) translateY(33vh) scale(0.26); }
+  11.11111% {
+    transform: translateX(43vw) translateY(0vh) scale(0.48); }
+  16.66667% {
+    transform: translateX(-24vw) translateY(2vh) scale(0.45); }
+  22.22222% {
+    transform: translateX(-24vw) translateY(47vh) scale(0.49); }
+  27.77778% {
+    transform: translateX(8vw) translateY(-39vh) scale(0.74); }
+  33.33333% {
+    transform: translateX(24vw) translateY(18vh) scale(0.36); }
+  38.88889% {
+    transform: translateX(16vw) translateY(10vh) scale(0.62); }
+  44.44444% {
+    transform: translateX(37vw) translateY(-34vh) scale(0.8); }
+  50% {
+    transform: translateX(-6vw) translateY(33vh) scale(0.6); }
+  55.55556% {
+    transform: translateX(2vw) translateY(-3vh) scale(0.46); }
+  61.11111% {
+    transform: translateX(34vw) translateY(5vh) scale(0.54); }
+  66.66667% {
+    transform: translateX(20vw) translateY(-14vh) scale(0.96); }
+  72.22222% {
+    transform: translateX(9vw) translateY(-46vh) scale(0.34); }
+  77.77778% {
+    transform: translateX(34vw) translateY(19vh) scale(0.33); }
+  83.33333% {
+    transform: translateX(5vw) translateY(-47vh) scale(0.73); }
+  88.88889% {
+    transform: translateX(42vw) translateY(-32vh) scale(0.89); }
+  94.44444% {
+    transform: translateX(-34vw) translateY(-19vh) scale(0.83); }
+  100% {
+    transform: translateX(14vw) translateY(-17vh) scale(0.54); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(32) {
+  animation-name: move32; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(32)::before {
+    animation-duration: 13s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(32)::after {
+    animation-duration: 13s, 10484ms;
+    animation-delay: 0ms, 2525ms; }
+
+@keyframes move32 {
+  0% {
+    transform: translateX(-13vw) translateY(-34vh) scale(0.44); }
+  5.26316% {
+    transform: translateX(-25vw) translateY(6vh) scale(0.45); }
+  10.52632% {
+    transform: translateX(26vw) translateY(-22vh) scale(0.81); }
+  15.78947% {
+    transform: translateX(23vw) translateY(31vh) scale(0.81); }
+  21.05263% {
+    transform: translateX(-48vw) translateY(19vh) scale(0.32); }
+  26.31579% {
+    transform: translateX(-35vw) translateY(50vh) scale(0.63); }
+  31.57895% {
+    transform: translateX(39vw) translateY(17vh) scale(0.39); }
+  36.84211% {
+    transform: translateX(1vw) translateY(-44vh) scale(0.88); }
+  42.10526% {
+    transform: translateX(-21vw) translateY(-3vh) scale(0.96); }
+  47.36842% {
+    transform: translateX(0vw) translateY(-16vh) scale(0.42); }
+  52.63158% {
+    transform: translateX(1vw) translateY(24vh) scale(0.58); }
+  57.89474% {
+    transform: translateX(-11vw) translateY(-22vh) scale(0.5); }
+  63.15789% {
+    transform: translateX(-43vw) translateY(28vh) scale(0.82); }
+  68.42105% {
+    transform: translateX(-18vw) translateY(-4vh) scale(0.58); }
+  73.68421% {
+    transform: translateX(-27vw) translateY(37vh) scale(0.39); }
+  78.94737% {
+    transform: translateX(33vw) translateY(20vh) scale(0.66); }
+  84.21053% {
+    transform: translateX(7vw) translateY(14vh) scale(0.26); }
+  89.47368% {
+    transform: translateX(-37vw) translateY(-15vh) scale(0.62); }
+  94.73684% {
+    transform: translateX(20vw) translateY(-14vh) scale(0.43); }
+  100% {
+    transform: translateX(6vw) translateY(-43vh) scale(0.3); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(33) {
+  animation-name: move33; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(33)::before {
+    animation-duration: 12s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(33)::after {
+    animation-duration: 12s, 8571ms;
+    animation-delay: 0ms, 7765ms; }
+
+@keyframes move33 {
+  0% {
+    transform: translateX(38vw) translateY(-45vh) scale(0.79); }
+  4.54545% {
+    transform: translateX(-21vw) translateY(43vh) scale(0.91); }
+  9.09091% {
+    transform: translateX(28vw) translateY(-24vh) scale(0.41); }
+  13.63636% {
+    transform: translateX(-5vw) translateY(-39vh) scale(0.36); }
+  18.18182% {
+    transform: translateX(6vw) translateY(-39vh) scale(0.59); }
+  22.72727% {
+    transform: translateX(9vw) translateY(34vh) scale(0.27); }
+  27.27273% {
+    transform: translateX(-18vw) translateY(-10vh) scale(0.81); }
+  31.81818% {
+    transform: translateX(-2vw) translateY(-4vh) scale(0.28); }
+  36.36364% {
+    transform: translateX(17vw) translateY(-17vh) scale(0.3); }
+  40.90909% {
+    transform: translateX(7vw) translateY(-42vh) scale(0.49); }
+  45.45455% {
+    transform: translateX(2vw) translateY(-2vh) scale(0.47); }
+  50% {
+    transform: translateX(-1vw) translateY(-9vh) scale(0.45); }
+  54.54545% {
+    transform: translateX(18vw) translateY(36vh) scale(0.46); }
+  59.09091% {
+    transform: translateX(-12vw) translateY(30vh) scale(0.89); }
+  63.63636% {
+    transform: translateX(39vw) translateY(15vh) scale(0.9); }
+  68.18182% {
+    transform: translateX(-23vw) translateY(38vh) scale(0.98); }
+  72.72727% {
+    transform: translateX(-5vw) translateY(27vh) scale(0.83); }
+  77.27273% {
+    transform: translateX(-34vw) translateY(11vh) scale(0.76); }
+  81.81818% {
+    transform: translateX(-15vw) translateY(-14vh) scale(0.26); }
+  86.36364% {
+    transform: translateX(-25vw) translateY(46vh) scale(0.98); }
+  90.90909% {
+    transform: translateX(-46vw) translateY(-47vh) scale(0.69); }
+  95.45455% {
+    transform: translateX(25vw) translateY(-48vh) scale(0.57); }
+  100% {
+    transform: translateX(23vw) translateY(-10vh) scale(0.79); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(34) {
+  animation-name: move34; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(34)::before {
+    animation-duration: 16s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(34)::after {
+    animation-duration: 16s, 6410ms;
+    animation-delay: 0ms, 7853ms; }
+
+@keyframes move34 {
+  0% {
+    transform: translateX(42vw) translateY(50vh) scale(0.29); }
+  4.16667% {
+    transform: translateX(4vw) translateY(-22vh) scale(0.97); }
+  8.33333% {
+    transform: translateX(5vw) translateY(10vh) scale(0.8); }
+  12.5% {
+    transform: translateX(50vw) translateY(18vh) scale(0.3); }
+  16.66667% {
+    transform: translateX(-37vw) translateY(8vh) scale(0.43); }
+  20.83333% {
+    transform: translateX(37vw) translateY(15vh) scale(0.89); }
+  25% {
+    transform: translateX(25vw) translateY(8vh) scale(0.92); }
+  29.16667% {
+    transform: translateX(-14vw) translateY(-25vh) scale(0.74); }
+  33.33333% {
+    transform: translateX(-11vw) translateY(-10vh) scale(0.61); }
+  37.5% {
+    transform: translateX(4vw) translateY(5vh) scale(0.26); }
+  41.66667% {
+    transform: translateX(34vw) translateY(-6vh) scale(0.66); }
+  45.83333% {
+    transform: translateX(-15vw) translateY(50vh) scale(0.95); }
+  50% {
+    transform: translateX(-12vw) translateY(-22vh) scale(0.72); }
+  54.16667% {
+    transform: translateX(-44vw) translateY(-21vh) scale(0.42); }
+  58.33333% {
+    transform: translateX(-25vw) translateY(-34vh) scale(0.5); }
+  62.5% {
+    transform: translateX(-30vw) translateY(1vh) scale(0.28); }
+  66.66667% {
+    transform: translateX(6vw) translateY(2vh) scale(0.65); }
+  70.83333% {
+    transform: translateX(-3vw) translateY(2vh) scale(0.96); }
+  75% {
+    transform: translateX(22vw) translateY(14vh) scale(0.7); }
+  79.16667% {
+    transform: translateX(45vw) translateY(39vh) scale(0.73); }
+  83.33333% {
+    transform: translateX(16vw) translateY(15vh) scale(0.59); }
+  87.5% {
+    transform: translateX(32vw) translateY(34vh) scale(0.59); }
+  91.66667% {
+    transform: translateX(-21vw) translateY(31vh) scale(0.67); }
+  95.83333% {
+    transform: translateX(6vw) translateY(23vh) scale(0.47); }
+  100% {
+    transform: translateX(47vw) translateY(-32vh) scale(0.34); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(35) {
+  animation-name: move35; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(35)::before {
+    animation-duration: 16s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(35)::after {
+    animation-duration: 16s, 6618ms;
+    animation-delay: 0ms, 4421ms; }
+
+@keyframes move35 {
+  0% {
+    transform: translateX(34vw) translateY(-43vh) scale(0.67); }
+  3.57143% {
+    transform: translateX(7vw) translateY(29vh) scale(0.65); }
+  7.14286% {
+    transform: translateX(13vw) translateY(-22vh) scale(0.28); }
+  10.71429% {
+    transform: translateX(14vw) translateY(-29vh) scale(0.3); }
+  14.28571% {
+    transform: translateX(23vw) translateY(-14vh) scale(0.41); }
+  17.85714% {
+    transform: translateX(-46vw) translateY(32vh) scale(0.63); }
+  21.42857% {
+    transform: translateX(9vw) translateY(22vh) scale(0.74); }
+  25% {
+    transform: translateX(13vw) translateY(4vh) scale(0.48); }
+  28.57143% {
+    transform: translateX(19vw) translateY(-2vh) scale(0.33); }
+  32.14286% {
+    transform: translateX(-18vw) translateY(37vh) scale(0.99); }
+  35.71429% {
+    transform: translateX(46vw) translateY(-14vh) scale(0.89); }
+  39.28571% {
+    transform: translateX(-13vw) translateY(-17vh) scale(0.96); }
+  42.85714% {
+    transform: translateX(10vw) translateY(1vh) scale(0.68); }
+  46.42857% {
+    transform: translateX(24vw) translateY(50vh) scale(0.74); }
+  50% {
+    transform: translateX(-17vw) translateY(8vh) scale(0.97); }
+  53.57143% {
+    transform: translateX(-43vw) translateY(41vh) scale(0.96); }
+  57.14286% {
+    transform: translateX(-38vw) translateY(-27vh) scale(0.75); }
+  60.71429% {
+    transform: translateX(-28vw) translateY(25vh) scale(0.47); }
+  64.28571% {
+    transform: translateX(2vw) translateY(-2vh) scale(0.63); }
+  67.85714% {
+    transform: translateX(-12vw) translateY(31vh) scale(0.83); }
+  71.42857% {
+    transform: translateX(24vw) translateY(-43vh) scale(0.57); }
+  75% {
+    transform: translateX(33vw) translateY(-30vh) scale(0.91); }
+  78.57143% {
+    transform: translateX(41vw) translateY(27vh) scale(0.54); }
+  82.14286% {
+    transform: translateX(50vw) translateY(28vh) scale(0.74); }
+  85.71429% {
+    transform: translateX(37vw) translateY(-17vh) scale(0.86); }
+  89.28571% {
+    transform: translateX(48vw) translateY(-44vh) scale(0.3); }
+  92.85714% {
+    transform: translateX(-7vw) translateY(38vh) scale(0.89); }
+  96.42857% {
+    transform: translateX(28vw) translateY(4vh) scale(0.45); }
+  100% {
+    transform: translateX(-2vw) translateY(46vh) scale(0.47); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(36) {
+  animation-name: move36; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(36)::before {
+    animation-duration: 14s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(36)::after {
+    animation-duration: 14s, 9876ms;
+    animation-delay: 0ms, 3890ms; }
+
+@keyframes move36 {
+  0% {
+    transform: translateX(32vw) translateY(-32vh) scale(0.95); }
+  4.16667% {
+    transform: translateX(-13vw) translateY(-38vh) scale(0.73); }
+  8.33333% {
+    transform: translateX(-11vw) translateY(-30vh) scale(0.37); }
+  12.5% {
+    transform: translateX(-37vw) translateY(-4vh) scale(0.53); }
+  16.66667% {
+    transform: translateX(-39vw) translateY(-47vh) scale(0.32); }
+  20.83333% {
+    transform: translateX(-31vw) translateY(-3vh) scale(0.95); }
+  25% {
+    transform: translateX(32vw) translateY(-45vh) scale(0.47); }
+  29.16667% {
+    transform: translateX(1vw) translateY(8vh) scale(1); }
+  33.33333% {
+    transform: translateX(-3vw) translateY(-15vh) scale(0.29); }
+  37.5% {
+    transform: translateX(-16vw) translateY(44vh) scale(0.99); }
+  41.66667% {
+    transform: translateX(-19vw) translateY(24vh) scale(0.9); }
+  45.83333% {
+    transform: translateX(-39vw) translateY(39vh) scale(0.88); }
+  50% {
+    transform: translateX(15vw) translateY(-29vh) scale(0.51); }
+  54.16667% {
+    transform: translateX(16vw) translateY(13vh) scale(0.45); }
+  58.33333% {
+    transform: translateX(28vw) translateY(43vh) scale(0.63); }
+  62.5% {
+    transform: translateX(1vw) translateY(-42vh) scale(0.31); }
+  66.66667% {
+    transform: translateX(18vw) translateY(43vh) scale(0.34); }
+  70.83333% {
+    transform: translateX(-39vw) translateY(9vh) scale(0.5); }
+  75% {
+    transform: translateX(22vw) translateY(3vh) scale(0.74); }
+  79.16667% {
+    transform: translateX(46vw) translateY(-4vh) scale(0.81); }
+  83.33333% {
+    transform: translateX(-33vw) translateY(-32vh) scale(0.72); }
+  87.5% {
+    transform: translateX(38vw) translateY(5vh) scale(0.58); }
+  91.66667% {
+    transform: translateX(34vw) translateY(21vh) scale(0.93); }
+  95.83333% {
+    transform: translateX(9vw) translateY(-15vh) scale(0.46); }
+  100% {
+    transform: translateX(-28vw) translateY(32vh) scale(0.93); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(37) {
+  animation-name: move37; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(37)::before {
+    animation-duration: 18s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(37)::after {
+    animation-duration: 18s, 9197ms;
+    animation-delay: 0ms, 3951ms; }
+
+@keyframes move37 {
+  0% {
+    transform: translateX(49vw) translateY(-17vh) scale(0.28); }
+  3.57143% {
+    transform: translateX(-34vw) translateY(7vh) scale(0.47); }
+  7.14286% {
+    transform: translateX(34vw) translateY(6vh) scale(0.53); }
+  10.71429% {
+    transform: translateX(-22vw) translateY(-44vh) scale(0.67); }
+  14.28571% {
+    transform: translateX(-19vw) translateY(21vh) scale(0.49); }
+  17.85714% {
+    transform: translateX(-39vw) translateY(46vh) scale(0.56); }
+  21.42857% {
+    transform: translateX(18vw) translateY(36vh) scale(0.94); }
+  25% {
+    transform: translateX(48vw) translateY(-40vh) scale(0.58); }
+  28.57143% {
+    transform: translateX(18vw) translateY(8vh) scale(0.43); }
+  32.14286% {
+    transform: translateX(7vw) translateY(28vh) scale(0.61); }
+  35.71429% {
+    transform: translateX(23vw) translateY(2vh) scale(0.68); }
+  39.28571% {
+    transform: translateX(35vw) translateY(-13vh) scale(0.85); }
+  42.85714% {
+    transform: translateX(25vw) translateY(30vh) scale(0.37); }
+  46.42857% {
+    transform: translateX(23vw) translateY(1vh) scale(0.54); }
+  50% {
+    transform: translateX(-10vw) translateY(-30vh) scale(0.63); }
+  53.57143% {
+    transform: translateX(12vw) translateY(-47vh) scale(0.67); }
+  57.14286% {
+    transform: translateX(31vw) translateY(15vh) scale(0.54); }
+  60.71429% {
+    transform: translateX(-24vw) translateY(-32vh) scale(0.58); }
+  64.28571% {
+    transform: translateX(46vw) translateY(39vh) scale(0.85); }
+  67.85714% {
+    transform: translateX(-4vw) translateY(30vh) scale(0.46); }
+  71.42857% {
+    transform: translateX(17vw) translateY(12vh) scale(0.63); }
+  75% {
+    transform: translateX(-20vw) translateY(-10vh) scale(0.72); }
+  78.57143% {
+    transform: translateX(10vw) translateY(2vh) scale(0.48); }
+  82.14286% {
+    transform: translateX(25vw) translateY(-40vh) scale(0.98); }
+  85.71429% {
+    transform: translateX(-46vw) translateY(25vh) scale(0.57); }
+  89.28571% {
+    transform: translateX(-46vw) translateY(15vh) scale(0.72); }
+  92.85714% {
+    transform: translateX(35vw) translateY(-25vh) scale(0.41); }
+  96.42857% {
+    transform: translateX(9vw) translateY(0vh) scale(0.92); }
+  100% {
+    transform: translateX(24vw) translateY(-43vh) scale(0.72); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(38) {
+  animation-name: move38; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(38)::before {
+    animation-duration: 16s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(38)::after {
+    animation-duration: 16s, 5374ms;
+    animation-delay: 0ms, 3051ms; }
+
+@keyframes move38 {
+  0% {
+    transform: translateX(-22vw) translateY(-42vh) scale(0.85); }
+  4.54545% {
+    transform: translateX(-15vw) translateY(46vh) scale(0.66); }
+  9.09091% {
+    transform: translateX(45vw) translateY(43vh) scale(0.94); }
+  13.63636% {
+    transform: translateX(46vw) translateY(-22vh) scale(0.57); }
+  18.18182% {
+    transform: translateX(22vw) translateY(6vh) scale(0.84); }
+  22.72727% {
+    transform: translateX(34vw) translateY(-41vh) scale(0.9); }
+  27.27273% {
+    transform: translateX(-28vw) translateY(-19vh) scale(0.73); }
+  31.81818% {
+    transform: translateX(-47vw) translateY(-6vh) scale(0.86); }
+  36.36364% {
+    transform: translateX(-16vw) translateY(-19vh) scale(0.83); }
+  40.90909% {
+    transform: translateX(-2vw) translateY(33vh) scale(0.8); }
+  45.45455% {
+    transform: translateX(-44vw) translateY(-15vh) scale(0.87); }
+  50% {
+    transform: translateX(-22vw) translateY(-21vh) scale(0.91); }
+  54.54545% {
+    transform: translateX(5vw) translateY(-20vh) scale(0.95); }
+  59.09091% {
+    transform: translateX(13vw) translateY(2vh) scale(0.89); }
+  63.63636% {
+    transform: translateX(-45vw) translateY(18vh) scale(0.47); }
+  68.18182% {
+    transform: translateX(-22vw) translateY(37vh) scale(0.47); }
+  72.72727% {
+    transform: translateX(32vw) translateY(17vh) scale(0.95); }
+  77.27273% {
+    transform: translateX(-16vw) translateY(34vh) scale(0.69); }
+  81.81818% {
+    transform: translateX(17vw) translateY(26vh) scale(0.3); }
+  86.36364% {
+    transform: translateX(24vw) translateY(-7vh) scale(0.75); }
+  90.90909% {
+    transform: translateX(-34vw) translateY(29vh) scale(0.31); }
+  95.45455% {
+    transform: translateX(-18vw) translateY(23vh) scale(0.31); }
+  100% {
+    transform: translateX(25vw) translateY(-2vh) scale(0.83); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(39) {
+  animation-name: move39; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(39)::before {
+    animation-duration: 15s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(39)::after {
+    animation-duration: 15s, 5991ms;
+    animation-delay: 0ms, 2767ms; }
+
+@keyframes move39 {
+  0% {
+    transform: translateX(50vw) translateY(-49vh) scale(0.87); }
+  5.26316% {
+    transform: translateX(29vw) translateY(4vh) scale(0.69); }
+  10.52632% {
+    transform: translateX(-46vw) translateY(3vh) scale(0.5); }
+  15.78947% {
+    transform: translateX(-7vw) translateY(-27vh) scale(0.57); }
+  21.05263% {
+    transform: translateX(-30vw) translateY(49vh) scale(0.4); }
+  26.31579% {
+    transform: translateX(4vw) translateY(-43vh) scale(0.55); }
+  31.57895% {
+    transform: translateX(-34vw) translateY(-29vh) scale(0.59); }
+  36.84211% {
+    transform: translateX(16vw) translateY(-4vh) scale(0.35); }
+  42.10526% {
+    transform: translateX(-37vw) translateY(-49vh) scale(0.28); }
+  47.36842% {
+    transform: translateX(22vw) translateY(21vh) scale(0.99); }
+  52.63158% {
+    transform: translateX(-3vw) translateY(-35vh) scale(0.94); }
+  57.89474% {
+    transform: translateX(-24vw) translateY(25vh) scale(0.35); }
+  63.15789% {
+    transform: translateX(-48vw) translateY(-8vh) scale(0.63); }
+  68.42105% {
+    transform: translateX(16vw) translateY(-20vh) scale(0.93); }
+  73.68421% {
+    transform: translateX(24vw) translateY(23vh) scale(0.34); }
+  78.94737% {
+    transform: translateX(-28vw) translateY(-41vh) scale(0.98); }
+  84.21053% {
+    transform: translateX(27vw) translateY(-31vh) scale(0.46); }
+  89.47368% {
+    transform: translateX(7vw) translateY(-11vh) scale(0.96); }
+  94.73684% {
+    transform: translateX(38vw) translateY(3vh) scale(0.84); }
+  100% {
+    transform: translateX(-26vw) translateY(24vh) scale(0.54); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(40) {
+  animation-name: move40; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(40)::before {
+    animation-duration: 15s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(40)::after {
+    animation-duration: 15s, 8188ms;
+    animation-delay: 0ms, 1954ms; }
+
+@keyframes move40 {
+  0% {
+    transform: translateX(21vw) translateY(-39vh) scale(0.62); }
+  5.55556% {
+    transform: translateX(-47vw) translateY(23vh) scale(0.71); }
+  11.11111% {
+    transform: translateX(-39vw) translateY(39vh) scale(0.94); }
+  16.66667% {
+    transform: translateX(39vw) translateY(29vh) scale(0.62); }
+  22.22222% {
+    transform: translateX(48vw) translateY(-31vh) scale(0.77); }
+  27.77778% {
+    transform: translateX(8vw) translateY(41vh) scale(1); }
+  33.33333% {
+    transform: translateX(49vw) translateY(-25vh) scale(0.72); }
+  38.88889% {
+    transform: translateX(41vw) translateY(-6vh) scale(0.48); }
+  44.44444% {
+    transform: translateX(4vw) translateY(36vh) scale(0.36); }
+  50% {
+    transform: translateX(20vw) translateY(25vh) scale(0.26); }
+  55.55556% {
+    transform: translateX(12vw) translateY(4vh) scale(0.99); }
+  61.11111% {
+    transform: translateX(-26vw) translateY(11vh) scale(0.9); }
+  66.66667% {
+    transform: translateX(40vw) translateY(-17vh) scale(0.82); }
+  72.22222% {
+    transform: translateX(30vw) translateY(-4vh) scale(0.75); }
+  77.77778% {
+    transform: translateX(-3vw) translateY(37vh) scale(0.9); }
+  83.33333% {
+    transform: translateX(-18vw) translateY(-13vh) scale(0.71); }
+  88.88889% {
+    transform: translateX(27vw) translateY(43vh) scale(0.45); }
+  94.44444% {
+    transform: translateX(-49vw) translateY(-44vh) scale(0.91); }
+  100% {
+    transform: translateX(13vw) translateY(-46vh) scale(0.59); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(41) {
+  animation-name: move41; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(41)::before {
+    animation-duration: 18s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(41)::after {
+    animation-duration: 18s, 5538ms;
+    animation-delay: 0ms, 6560ms; }
+
+@keyframes move41 {
+  0% {
+    transform: translateX(-22vw) translateY(-13vh) scale(0.68); }
+  4.16667% {
+    transform: translateX(8vw) translateY(0vh) scale(0.94); }
+  8.33333% {
+    transform: translateX(-44vw) translateY(-24vh) scale(0.79); }
+  12.5% {
+    transform: translateX(-6vw) translateY(-22vh) scale(0.7); }
+  16.66667% {
+    transform: translateX(41vw) translateY(-49vh) scale(0.92); }
+  20.83333% {
+    transform: translateX(37vw) translateY(-17vh) scale(0.58); }
+  25% {
+    transform: translateX(5vw) translateY(41vh) scale(0.44); }
+  29.16667% {
+    transform: translateX(47vw) translateY(10vh) scale(0.89); }
+  33.33333% {
+    transform: translateX(-24vw) translateY(-16vh) scale(0.83); }
+  37.5% {
+    transform: translateX(21vw) translateY(32vh) scale(0.32); }
+  41.66667% {
+    transform: translateX(33vw) translateY(26vh) scale(0.84); }
+  45.83333% {
+    transform: translateX(-2vw) translateY(47vh) scale(0.35); }
+  50% {
+    transform: translateX(28vw) translateY(48vh) scale(0.26); }
+  54.16667% {
+    transform: translateX(-8vw) translateY(-22vh) scale(0.28); }
+  58.33333% {
+    transform: translateX(12vw) translateY(23vh) scale(0.89); }
+  62.5% {
+    transform: translateX(30vw) translateY(-9vh) scale(0.52); }
+  66.66667% {
+    transform: translateX(-49vw) translateY(2vh) scale(0.66); }
+  70.83333% {
+    transform: translateX(30vw) translateY(-1vh) scale(0.99); }
+  75% {
+    transform: translateX(19vw) translateY(14vh) scale(0.37); }
+  79.16667% {
+    transform: translateX(24vw) translateY(-12vh) scale(0.31); }
+  83.33333% {
+    transform: translateX(-21vw) translateY(6vh) scale(0.63); }
+  87.5% {
+    transform: translateX(21vw) translateY(31vh) scale(0.88); }
+  91.66667% {
+    transform: translateX(50vw) translateY(-22vh) scale(0.4); }
+  95.83333% {
+    transform: translateX(9vw) translateY(7vh) scale(0.3); }
+  100% {
+    transform: translateX(24vw) translateY(16vh) scale(0.62); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(42) {
+  animation-name: move42; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(42)::before {
+    animation-duration: 17s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(42)::after {
+    animation-duration: 17s, 6285ms;
+    animation-delay: 0ms, 8385ms; }
+
+@keyframes move42 {
+  0% {
+    transform: translateX(31vw) translateY(33vh) scale(0.79); }
+  4% {
+    transform: translateX(-18vw) translateY(-11vh) scale(0.93); }
+  8% {
+    transform: translateX(10vw) translateY(-26vh) scale(0.49); }
+  12% {
+    transform: translateX(47vw) translateY(-38vh) scale(0.97); }
+  16% {
+    transform: translateX(-48vw) translateY(47vh) scale(0.76); }
+  20% {
+    transform: translateX(-47vw) translateY(-3vh) scale(0.51); }
+  24% {
+    transform: translateX(-7vw) translateY(-18vh) scale(0.28); }
+  28% {
+    transform: translateX(-32vw) translateY(-39vh) scale(0.99); }
+  32% {
+    transform: translateX(-1vw) translateY(21vh) scale(0.93); }
+  36% {
+    transform: translateX(50vw) translateY(17vh) scale(0.77); }
+  40% {
+    transform: translateX(-32vw) translateY(-11vh) scale(0.38); }
+  44% {
+    transform: translateX(-38vw) translateY(-12vh) scale(0.34); }
+  48% {
+    transform: translateX(8vw) translateY(-14vh) scale(0.87); }
+  52% {
+    transform: translateX(26vw) translateY(11vh) scale(0.5); }
+  56% {
+    transform: translateX(1vw) translateY(-36vh) scale(0.64); }
+  60% {
+    transform: translateX(27vw) translateY(-42vh) scale(0.28); }
+  64% {
+    transform: translateX(-44vw) translateY(34vh) scale(0.44); }
+  68% {
+    transform: translateX(40vw) translateY(-46vh) scale(0.68); }
+  72% {
+    transform: translateX(-34vw) translateY(35vh) scale(0.68); }
+  76% {
+    transform: translateX(-49vw) translateY(6vh) scale(0.47); }
+  80% {
+    transform: translateX(-10vw) translateY(49vh) scale(0.83); }
+  84% {
+    transform: translateX(10vw) translateY(21vh) scale(0.49); }
+  88% {
+    transform: translateX(-18vw) translateY(38vh) scale(0.73); }
+  92% {
+    transform: translateX(7vw) translateY(28vh) scale(0.72); }
+  96% {
+    transform: translateX(-19vw) translateY(33vh) scale(0.71); }
+  100% {
+    transform: translateX(50vw) translateY(43vh) scale(0.74); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(43) {
+  animation-name: move43; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(43)::before {
+    animation-duration: 14s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(43)::after {
+    animation-duration: 14s, 7041ms;
+    animation-delay: 0ms, 1021ms; }
+
+@keyframes move43 {
+  0% {
+    transform: translateX(-11vw) translateY(-39vh) scale(0.27); }
+  5% {
+    transform: translateX(28vw) translateY(36vh) scale(0.38); }
+  10% {
+    transform: translateX(-16vw) translateY(-33vh) scale(0.53); }
+  15% {
+    transform: translateX(-33vw) translateY(43vh) scale(0.67); }
+  20% {
+    transform: translateX(18vw) translateY(41vh) scale(0.77); }
+  25% {
+    transform: translateX(26vw) translateY(-8vh) scale(0.29); }
+  30% {
+    transform: translateX(49vw) translateY(-7vh) scale(0.65); }
+  35% {
+    transform: translateX(14vw) translateY(-33vh) scale(0.38); }
+  40% {
+    transform: translateX(35vw) translateY(8vh) scale(0.35); }
+  45% {
+    transform: translateX(10vw) translateY(-47vh) scale(0.92); }
+  50% {
+    transform: translateX(-36vw) translateY(-46vh) scale(0.87); }
+  55% {
+    transform: translateX(-1vw) translateY(6vh) scale(0.48); }
+  60% {
+    transform: translateX(42vw) translateY(-35vh) scale(0.68); }
+  65% {
+    transform: translateX(41vw) translateY(-1vh) scale(0.84); }
+  70% {
+    transform: translateX(-12vw) translateY(23vh) scale(0.26); }
+  75% {
+    transform: translateX(-21vw) translateY(-32vh) scale(0.7); }
+  80% {
+    transform: translateX(38vw) translateY(5vh) scale(0.74); }
+  85% {
+    transform: translateX(46vw) translateY(-36vh) scale(0.61); }
+  90% {
+    transform: translateX(49vw) translateY(-36vh) scale(0.99); }
+  95% {
+    transform: translateX(-16vw) translateY(16vh) scale(0.82); }
+  100% {
+    transform: translateX(7vw) translateY(-25vh) scale(0.38); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(44) {
+  animation-name: move44; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(44)::before {
+    animation-duration: 18s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(44)::after {
+    animation-duration: 18s, 6901ms;
+    animation-delay: 0ms, 6003ms; }
+
+@keyframes move44 {
+  0% {
+    transform: translateX(43vw) translateY(-6vh) scale(0.86); }
+  4.16667% {
+    transform: translateX(17vw) translateY(23vh) scale(0.79); }
+  8.33333% {
+    transform: translateX(6vw) translateY(-49vh) scale(0.83); }
+  12.5% {
+    transform: translateX(42vw) translateY(-49vh) scale(0.46); }
+  16.66667% {
+    transform: translateX(-17vw) translateY(49vh) scale(0.99); }
+  20.83333% {
+    transform: translateX(-13vw) translateY(19vh) scale(0.28); }
+  25% {
+    transform: translateX(-31vw) translateY(22vh) scale(0.45); }
+  29.16667% {
+    transform: translateX(-20vw) translateY(-38vh) scale(1); }
+  33.33333% {
+    transform: translateX(-20vw) translateY(35vh) scale(0.43); }
+  37.5% {
+    transform: translateX(37vw) translateY(28vh) scale(0.98); }
+  41.66667% {
+    transform: translateX(0vw) translateY(18vh) scale(0.87); }
+  45.83333% {
+    transform: translateX(-46vw) translateY(-15vh) scale(0.63); }
+  50% {
+    transform: translateX(20vw) translateY(12vh) scale(0.26); }
+  54.16667% {
+    transform: translateX(-33vw) translateY(-44vh) scale(0.42); }
+  58.33333% {
+    transform: translateX(-43vw) translateY(21vh) scale(0.54); }
+  62.5% {
+    transform: translateX(-48vw) translateY(30vh) scale(0.93); }
+  66.66667% {
+    transform: translateX(1vw) translateY(10vh) scale(0.34); }
+  70.83333% {
+    transform: translateX(-17vw) translateY(3vh) scale(0.88); }
+  75% {
+    transform: translateX(-27vw) translateY(-37vh) scale(0.43); }
+  79.16667% {
+    transform: translateX(42vw) translateY(12vh) scale(0.96); }
+  83.33333% {
+    transform: translateX(-4vw) translateY(-7vh) scale(0.6); }
+  87.5% {
+    transform: translateX(47vw) translateY(19vh) scale(0.94); }
+  91.66667% {
+    transform: translateX(30vw) translateY(-18vh) scale(0.67); }
+  95.83333% {
+    transform: translateX(21vw) translateY(-24vh) scale(0.85); }
+  100% {
+    transform: translateX(-16vw) translateY(22vh) scale(0.68); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(45) {
+  animation-name: move45; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(45)::before {
+    animation-duration: 17s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(45)::after {
+    animation-duration: 17s, 7430ms;
+    animation-delay: 0ms, 5381ms; }
+
+@keyframes move45 {
+  0% {
+    transform: translateX(47vw) translateY(9vh) scale(0.66); }
+  4.34783% {
+    transform: translateX(47vw) translateY(14vh) scale(0.56); }
+  8.69565% {
+    transform: translateX(-13vw) translateY(40vh) scale(0.6); }
+  13.04348% {
+    transform: translateX(-22vw) translateY(35vh) scale(0.82); }
+  17.3913% {
+    transform: translateX(29vw) translateY(-49vh) scale(0.35); }
+  21.73913% {
+    transform: translateX(36vw) translateY(-37vh) scale(0.53); }
+  26.08696% {
+    transform: translateX(-21vw) translateY(38vh) scale(0.89); }
+  30.43478% {
+    transform: translateX(-22vw) translateY(27vh) scale(0.63); }
+  34.78261% {
+    transform: translateX(44vw) translateY(-32vh) scale(0.73); }
+  39.13043% {
+    transform: translateX(-23vw) translateY(24vh) scale(0.73); }
+  43.47826% {
+    transform: translateX(1vw) translateY(-10vh) scale(0.5); }
+  47.82609% {
+    transform: translateX(-2vw) translateY(26vh) scale(0.85); }
+  52.17391% {
+    transform: translateX(-13vw) translateY(18vh) scale(0.77); }
+  56.52174% {
+    transform: translateX(-6vw) translateY(-39vh) scale(0.83); }
+  60.86957% {
+    transform: translateX(-26vw) translateY(35vh) scale(0.31); }
+  65.21739% {
+    transform: translateX(37vw) translateY(-10vh) scale(0.58); }
+  69.56522% {
+    transform: translateX(-8vw) translateY(17vh) scale(0.7); }
+  73.91304% {
+    transform: translateX(36vw) translateY(-8vh) scale(0.68); }
+  78.26087% {
+    transform: translateX(39vw) translateY(-4vh) scale(0.83); }
+  82.6087% {
+    transform: translateX(-41vw) translateY(35vh) scale(0.63); }
+  86.95652% {
+    transform: translateX(45vw) translateY(-29vh) scale(0.37); }
+  91.30435% {
+    transform: translateX(-8vw) translateY(10vh) scale(0.27); }
+  95.65217% {
+    transform: translateX(-11vw) translateY(-9vh) scale(0.78); }
+  100% {
+    transform: translateX(1vw) translateY(-6vh) scale(0.91); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(46) {
+  animation-name: move46; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(46)::before {
+    animation-duration: 10s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(46)::after {
+    animation-duration: 10s, 5199ms;
+    animation-delay: 0ms, 4698ms; }
+
+@keyframes move46 {
+  0% {
+    transform: translateX(40vw) translateY(29vh) scale(0.53); }
+  5.26316% {
+    transform: translateX(47vw) translateY(46vh) scale(0.5); }
+  10.52632% {
+    transform: translateX(-46vw) translateY(9vh) scale(0.67); }
+  15.78947% {
+    transform: translateX(27vw) translateY(10vh) scale(0.9); }
+  21.05263% {
+    transform: translateX(35vw) translateY(-47vh) scale(0.9); }
+  26.31579% {
+    transform: translateX(-30vw) translateY(15vh) scale(0.4); }
+  31.57895% {
+    transform: translateX(45vw) translateY(-49vh) scale(0.66); }
+  36.84211% {
+    transform: translateX(31vw) translateY(-33vh) scale(0.5); }
+  42.10526% {
+    transform: translateX(30vw) translateY(5vh) scale(0.54); }
+  47.36842% {
+    transform: translateX(24vw) translateY(-18vh) scale(0.66); }
+  52.63158% {
+    transform: translateX(48vw) translateY(37vh) scale(0.4); }
+  57.89474% {
+    transform: translateX(28vw) translateY(15vh) scale(0.56); }
+  63.15789% {
+    transform: translateX(14vw) translateY(-3vh) scale(0.49); }
+  68.42105% {
+    transform: translateX(50vw) translateY(3vh) scale(0.65); }
+  73.68421% {
+    transform: translateX(-32vw) translateY(-12vh) scale(0.96); }
+  78.94737% {
+    transform: translateX(-33vw) translateY(36vh) scale(0.97); }
+  84.21053% {
+    transform: translateX(11vw) translateY(-30vh) scale(0.42); }
+  89.47368% {
+    transform: translateX(41vw) translateY(45vh) scale(0.66); }
+  94.73684% {
+    transform: translateX(-33vw) translateY(29vh) scale(0.46); }
+  100% {
+    transform: translateX(44vw) translateY(21vh) scale(0.83); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(47) {
+  animation-name: move47; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(47)::before {
+    animation-duration: 16s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(47)::after {
+    animation-duration: 16s, 8461ms;
+    animation-delay: 0ms, 3079ms; }
+
+@keyframes move47 {
+  0% {
+    transform: translateX(41vw) translateY(27vh) scale(0.4); }
+  5.55556% {
+    transform: translateX(-30vw) translateY(-2vh) scale(0.72); }
+  11.11111% {
+    transform: translateX(46vw) translateY(-13vh) scale(0.43); }
+  16.66667% {
+    transform: translateX(38vw) translateY(34vh) scale(0.69); }
+  22.22222% {
+    transform: translateX(-38vw) translateY(-7vh) scale(0.33); }
+  27.77778% {
+    transform: translateX(-10vw) translateY(16vh) scale(0.8); }
+  33.33333% {
+    transform: translateX(-17vw) translateY(19vh) scale(0.48); }
+  38.88889% {
+    transform: translateX(-45vw) translateY(-37vh) scale(0.41); }
+  44.44444% {
+    transform: translateX(-24vw) translateY(39vh) scale(0.46); }
+  50% {
+    transform: translateX(-41vw) translateY(-19vh) scale(0.42); }
+  55.55556% {
+    transform: translateX(21vw) translateY(-24vh) scale(0.26); }
+  61.11111% {
+    transform: translateX(7vw) translateY(1vh) scale(0.32); }
+  66.66667% {
+    transform: translateX(5vw) translateY(18vh) scale(0.86); }
+  72.22222% {
+    transform: translateX(34vw) translateY(17vh) scale(0.37); }
+  77.77778% {
+    transform: translateX(-4vw) translateY(-35vh) scale(0.55); }
+  83.33333% {
+    transform: translateX(13vw) translateY(-23vh) scale(0.86); }
+  88.88889% {
+    transform: translateX(-34vw) translateY(-18vh) scale(0.53); }
+  94.44444% {
+    transform: translateX(2vw) translateY(6vh) scale(0.69); }
+  100% {
+    transform: translateX(21vw) translateY(27vh) scale(0.92); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(48) {
+  animation-name: move48; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(48)::before {
+    animation-duration: 13s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(48)::after {
+    animation-duration: 13s, 5765ms;
+    animation-delay: 0ms, 696ms; }
+
+@keyframes move48 {
+  0% {
+    transform: translateX(46vw) translateY(15vh) scale(0.75); }
+  3.57143% {
+    transform: translateX(-21vw) translateY(-37vh) scale(0.31); }
+  7.14286% {
+    transform: translateX(23vw) translateY(45vh) scale(0.94); }
+  10.71429% {
+    transform: translateX(0vw) translateY(-29vh) scale(0.26); }
+  14.28571% {
+    transform: translateX(-20vw) translateY(-25vh) scale(0.96); }
+  17.85714% {
+    transform: translateX(46vw) translateY(21vh) scale(0.83); }
+  21.42857% {
+    transform: translateX(-1vw) translateY(-20vh) scale(0.94); }
+  25% {
+    transform: translateX(-12vw) translateY(-13vh) scale(0.33); }
+  28.57143% {
+    transform: translateX(4vw) translateY(-42vh) scale(0.66); }
+  32.14286% {
+    transform: translateX(-18vw) translateY(37vh) scale(0.52); }
+  35.71429% {
+    transform: translateX(-45vw) translateY(45vh) scale(0.96); }
+  39.28571% {
+    transform: translateX(36vw) translateY(-20vh) scale(0.3); }
+  42.85714% {
+    transform: translateX(18vw) translateY(-25vh) scale(0.75); }
+  46.42857% {
+    transform: translateX(38vw) translateY(9vh) scale(0.44); }
+  50% {
+    transform: translateX(21vw) translateY(-45vh) scale(0.81); }
+  53.57143% {
+    transform: translateX(38vw) translateY(30vh) scale(0.71); }
+  57.14286% {
+    transform: translateX(50vw) translateY(35vh) scale(0.85); }
+  60.71429% {
+    transform: translateX(-39vw) translateY(29vh) scale(0.63); }
+  64.28571% {
+    transform: translateX(-39vw) translateY(-44vh) scale(0.85); }
+  67.85714% {
+    transform: translateX(30vw) translateY(16vh) scale(0.8); }
+  71.42857% {
+    transform: translateX(33vw) translateY(38vh) scale(0.3); }
+  75% {
+    transform: translateX(20vw) translateY(6vh) scale(0.39); }
+  78.57143% {
+    transform: translateX(-44vw) translateY(30vh) scale(0.63); }
+  82.14286% {
+    transform: translateX(42vw) translateY(-32vh) scale(0.71); }
+  85.71429% {
+    transform: translateX(10vw) translateY(-26vh) scale(0.56); }
+  89.28571% {
+    transform: translateX(25vw) translateY(23vh) scale(0.66); }
+  92.85714% {
+    transform: translateX(41vw) translateY(37vh) scale(0.96); }
+  96.42857% {
+    transform: translateX(-27vw) translateY(0vh) scale(0.39); }
+  100% {
+    transform: translateX(-6vw) translateY(20vh) scale(0.95); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(49) {
+  animation-name: move49; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(49)::before {
+    animation-duration: 9s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(49)::after {
+    animation-duration: 9s, 10650ms;
+    animation-delay: 0ms, 5529ms; }
+
+@keyframes move49 {
+  0% {
+    transform: translateX(18vw) translateY(26vh) scale(0.53); }
+  4.7619% {
+    transform: translateX(23vw) translateY(1vh) scale(0.38); }
+  9.52381% {
+    transform: translateX(-14vw) translateY(-5vh) scale(0.45); }
+  14.28571% {
+    transform: translateX(-7vw) translateY(-8vh) scale(0.34); }
+  19.04762% {
+    transform: translateX(5vw) translateY(-30vh) scale(0.95); }
+  23.80952% {
+    transform: translateX(12vw) translateY(18vh) scale(0.47); }
+  28.57143% {
+    transform: translateX(7vw) translateY(6vh) scale(0.94); }
+  33.33333% {
+    transform: translateX(8vw) translateY(-35vh) scale(0.6); }
+  38.09524% {
+    transform: translateX(-26vw) translateY(3vh) scale(0.6); }
+  42.85714% {
+    transform: translateX(37vw) translateY(21vh) scale(0.54); }
+  47.61905% {
+    transform: translateX(-24vw) translateY(-1vh) scale(0.46); }
+  52.38095% {
+    transform: translateX(-31vw) translateY(-13vh) scale(0.68); }
+  57.14286% {
+    transform: translateX(-1vw) translateY(-31vh) scale(0.81); }
+  61.90476% {
+    transform: translateX(41vw) translateY(-27vh) scale(0.78); }
+  66.66667% {
+    transform: translateX(46vw) translateY(-19vh) scale(0.93); }
+  71.42857% {
+    transform: translateX(-5vw) translateY(-13vh) scale(0.79); }
+  76.19048% {
+    transform: translateX(15vw) translateY(40vh) scale(0.75); }
+  80.95238% {
+    transform: translateX(-15vw) translateY(33vh) scale(0.96); }
+  85.71429% {
+    transform: translateX(-31vw) translateY(-35vh) scale(0.4); }
+  90.47619% {
+    transform: translateX(-1vw) translateY(-4vh) scale(0.92); }
+  95.2381% {
+    transform: translateX(17vw) translateY(-20vh) scale(0.78); }
+  100% {
+    transform: translateX(6vw) translateY(5vh) scale(0.83); } }
+
+/* line 48, playground/static/playground/css/styles.sass */
+.firefly:nth-child(50) {
+  animation-name: move50; }
+  /* line 51, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(50)::before {
+    animation-duration: 18s; }
+  /* line 54, playground/static/playground/css/styles.sass */
+  .firefly:nth-child(50)::after {
+    animation-duration: 18s, 5873ms;
+    animation-delay: 0ms, 3094ms; }
+
+@keyframes move50 {
+  0% {
+    transform: translateX(3vw) translateY(-28vh) scale(0.45); }
+  3.84615% {
+    transform: translateX(26vw) translateY(5vh) scale(0.34); }
+  7.69231% {
+    transform: translateX(-28vw) translateY(-39vh) scale(0.91); }
+  11.53846% {
+    transform: translateX(31vw) translateY(-42vh) scale(0.89); }
+  15.38462% {
+    transform: translateX(-2vw) translateY(4vh) scale(0.65); }
+  19.23077% {
+    transform: translateX(-36vw) translateY(-25vh) scale(0.42); }
+  23.07692% {
+    transform: translateX(-25vw) translateY(-26vh) scale(0.94); }
+  26.92308% {
+    transform: translateX(27vw) translateY(13vh) scale(0.37); }
+  30.76923% {
+    transform: translateX(25vw) translateY(-41vh) scale(0.62); }
+  34.61538% {
+    transform: translateX(-49vw) translateY(22vh) scale(0.73); }
+  38.46154% {
+    transform: translateX(38vw) translateY(28vh) scale(0.82); }
+  42.30769% {
+    transform: translateX(-34vw) translateY(49vh) scale(0.68); }
+  46.15385% {
+    transform: translateX(-18vw) translateY(4vh) scale(0.66); }
+  50% {
+    transform: translateX(0vw) translateY(-7vh) scale(0.6); }
+  53.84615% {
+    transform: translateX(21vw) translateY(45vh) scale(0.52); }
+  57.69231% {
+    transform: translateX(-4vw) translateY(-39vh) scale(0.91); }
+  61.53846% {
+    transform: translateX(3vw) translateY(-22vh) scale(0.32); }
+  65.38462% {
+    transform: translateX(22vw) translateY(-23vh) scale(0.85); }
+  69.23077% {
+    transform: translateX(-49vw) translateY(-14vh) scale(0.72); }
+  73.07692% {
+    transform: translateX(-44vw) translateY(50vh) scale(0.6); }
+  76.92308% {
+    transform: translateX(-17vw) translateY(47vh) scale(0.85); }
+  80.76923% {
+    transform: translateX(4vw) translateY(-36vh) scale(0.3); }
+  84.61538% {
+    transform: translateX(21vw) translateY(16vh) scale(0.88); }
+  88.46154% {
+    transform: translateX(43vw) translateY(20vh) scale(0.73); }
+  92.30769% {
+    transform: translateX(-27vw) translateY(-45vh) scale(0.76); }
+  96.15385% {
+    transform: translateX(33vw) translateY(-41vh) scale(0.83); }
+  100% {
+    transform: translateX(-27vw) translateY(4vh) scale(0.67); } }
+
+@keyframes drift {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes flash {
+  0%, 30%, 100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw yellow; }
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw yellow; } }
