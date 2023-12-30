@@ -6,7 +6,7 @@ from .models import *
 # Create your views here.
 
 def index(request):
-    return render(request, 'playground/base.html')
+    return render(request, 'playground/authentication.html')
 
 def process_form(request):
     if request.method == 'POST':
@@ -35,6 +35,7 @@ def process_form(request):
         #         print(*item)
 
         # For now, return a simple response
-        return HttpResponse("Form submitted successfully.")
+        # return HttpResponse("Form submitted successfully.")
+        return render(request, 'playground/workbench.html')
     else:
         return HttpResponse("Form submission failed.")

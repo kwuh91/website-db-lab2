@@ -1,11 +1,5 @@
-{% load static %} {% load compress %} {% compress css %}
-<link
-  type="text/x-scss"
-  href="{% static 'playground/css/styles.sass' %}"
-  rel="stylesheet"
-  media="screen"
-/>
-{% endcompress %}
+{% load static %} 
+{% load compress %} 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +7,16 @@
     <title>Authentication</title>
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    {% compress css %}
+    <link
+      type="text/x-scss"
+      href="{% static 'playground/css/styles.sass' %}"
+      rel="stylesheet"
+      media="screen"
+    />
+    {% endcompress %}
 
     {% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -43,74 +46,7 @@
   </head>
 
   <body>
-    {% with ''|center:50 as range %} {% for _ in range %}
-    <div class="firefly"></div>
-    {% endfor %} {% endwith %}
-
-    <div
-      class="main_cont container p-5 text-white w-25 position-absolute top-50 start-50 translate-middle"
-    >
-      <form method="post" action="{% url 'process_form' %}">
-        {% csrf_token %}
-
-        <div class="mb-3 field">
-          <label for="address">Адрес:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="address"
-            placeholder="e.g. virtual.fn11.bmstu.ru"
-            name="address"
-          />
-        </div>
-
-        <div class="mb-3 field">
-          <label for="db">База Данных:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="db"
-            placeholder="e.g. fn1131_202_"
-            name="db"
-          />
-        </div>
-
-        <div class="mb-3 field">
-          <label for="login">Логин:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="login"
-            placeholder="e.g. student"
-            name="login"
-          />
-        </div>
-
-        <div class="mb-3 field">
-          <label for="pwd">Пароль:</label>
-          <input
-            type="password"
-            class="form-control"
-            id="pwd"
-            placeholder="Введите пароль"
-            name="pswd"
-          />
-        </div>
-
-        <div class="mb-3 field">
-          <label for="port">Порт:</label>
-          <input
-            type="number"
-            class="form-control"
-            id="port"
-            placeholder="e.g. 5432"
-            name="port"
-          />
-        </div>
-
-        <button type="submit" class="btn btn-light mt-3">OK</button>
-        <button type="button" class="btn btn-light mt-3">Cancel</button>
-      </form>
-    </div>
+    {% block content %}
+    {% endblock %}
   </body>
 </html>
