@@ -2,35 +2,70 @@
 
 {% block content %} 
 
-<!--justify-content-between align-items-start-->
+{% with ''|center:50 as range %} 
+{% for _ in range %}
+<div class="firefly"></div>
+{% endfor %} 
+{% endwith %}
+
 <div class ="grid-cont container-fluid position-absolute top-50 start-50 translate-middle px-5">
     <div class="row">
-        <div class="grid-item col-lg-4"> TEST1 </div>
-        <div class="grid-item col-lg-4"> TEST2 </div>
-        <div class="grid-item col-lg-4"> TEST3 </div>
+        <!-- list of tables 1 -->
+            <div class="grid-item-up col-lg-4"> 
+                <div class="in-cont-up">
+                    {% for table in tables %}
+                        <p> {{ table }} </p>
+                    {% endfor %}
+                </div>
+            </div>
+        <!-- ouptut window 3 -->
+        <div class="grid-item-up col-lg-4">
+            <div class="in-cont-up">
+                {% for item in data %}
+                    <p> {{ item }} </p>
+                {% endfor %}  
+            </div>
+        </div>
+        <!-- history 4 -->
+        <div class="grid-item-up col-lg-4"> 
+            <div class="in-cont-up">
+                {% for entry in history_entries %}
+                    <p> {{ entry.input_text }} - {{ entry.timestamp }} </p>
+                {% endfor %}
+           </div> 
+        </div>
     </div>
 
-    <div class="row">
-        <div class="grid-item col-lg-8"> TEST4 </div>
-        <div class="grid-item col-lg-4"> TEST5 </div>
-    </div>
+    <form method="get" action="{% url 'process_form' %}">
+        {% csrf_token %}
+
+        <div class="row">
+            <!-- input field 2 -->
+            <div class="grid-item-mid1 col-lg-8"> 
+                <textarea 
+                id="qinput" 
+                type="text" 
+                name="qinput" 
+                class="db-control" 
+                placeholder="e.g. SELECT * FROM world.city LIMIT 10;" 
+                rows="4"
+                cols="50"></textarea>
+            </div>
+
+            <!-- submit button 5 -->
+            <div class="grid-item-mid2 col-lg-4">
+                <button type="submit" class="qbtn btn-light"> OK </button>   
+            </div>
+        </div>
+    </form>
 
     <div class="row">
-        <div class="grid-item col-lg-12"> TEST6 </div>
+        <!-- error 6 -->
+        <div class="grid-item-down col-lg-12"> 
+            <div class="container in-cont-down">
+                {{ error_msg }} 
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
-
-<!--
-    <div class="grid-container">
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>  
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-    <div class="grid-item">6</div>  
-    <div class="grid-item">7</div>
-    <div class="grid-item">8</div>
-    <div class="grid-item">9</div>  
-  </div>
--->

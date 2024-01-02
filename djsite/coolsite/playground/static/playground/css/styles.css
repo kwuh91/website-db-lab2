@@ -42,12 +42,125 @@ body {
     font-family: 'Play';
 }
 
-.grid-item {
-background-color: rgba(255, 255, 255, 0.8);
-border: 1px solid rgba(0, 0, 0, 0.8);
-/*
-padding: 20px;
-font-size: 30px;
-*/
-text-align: center;
+.grid-item-up {
+    color: #FAF6F0;
+    background-color: #1f1f1f5b;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 400px;
+    text-align: center;
+    width: 32%;
+    border-radius:.75rem !important;
+    margin: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item-mid1 {
+    background-color: #1f1f1f5b;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 65%;
+    height: 200px;
+    overflow-y: auto;
+    border-radius:.75rem !important;
+    margin: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item-mid2 {
+    background-color: #1f1f1f5b;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 32%;
+    text-align: center;
+    height: 200px;
+    overflow-y: auto;
+    border-radius:.75rem !important;
+    margin: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item-down {
+    background-color: #1f1f1f5b;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 98%;
+    text-align: center;
+    height: 100px;
+    overflow-y: auto;   
+    border-radius:.75rem !important;
+    margin: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.db-control {
+    color: #FAF6F0 !important;
+    background-color: #1f1f1f5b;
+    font-family: 'Play';
+    width: 99%;
+    height: 75%; 
+    border-radius:.75rem !important;
+    text-align: left;
+    padding: 3%;
+}
+
+.db-control:focus{
+    border-color: #FAF6F0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #1f1f1f5b;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.in-cont-up{
+    height: 90%;
+    width: 90%;
+    text-align: left;
+    font-family: 'Play';
+    overflow-y: auto;
+}
+
+.in-cont-mid{
+    color: #FAF6F0 !important;
+    font-family: 'Play';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.in-cont-down{
+    color: #FAF6F0 !important;
+    font-family: 'Play';
+    border-radius:.75rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    height: 65%;
+    width: 99%;
+}
+
+.qbtn {
+    color: #FAF6F0 !important;
+    background-color: #1f1f1f5b;
+    font-family: 'Play';
+    width: 95%;
+    height: 75%; 
+    border-radius:.75rem !important;
+}
+
+.qbtn:hover, .qbtn:focus, .qbtn:active, .qbtn.active, .open>.dropdown-toggle.qbtn {
+    background-color: #1f1f1f5b !important;
+    font-family: 'Play';
+    width: 95%;
+    height: 75%; 
+    border-radius:.75rem !important;
 }
