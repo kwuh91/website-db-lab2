@@ -26,7 +26,7 @@ SECRET_KEY = '###'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['']
 
 
 # Application definition
@@ -80,19 +80,19 @@ WSGI_APPLICATION = 'coolsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'world',
-        'USER': 'root',
+        'NAME': '',
+        'USER': '',
         'PASSWORD': '###',
-        'HOST':'127.0.0.1',
-        'PORT':'3306',
+        'HOST':'',
+        'PORT':'',
     }
     #     'default': {
     #     'ENGINE': 'django.db.backends.mysql',
     #     'NAME': 'fn1131_202_',
-    #     'USER': 'student',
+    #     'USER': '',
     #     'PASSWORD': '###',
     #     'HOST': 'virtual.fn11.bmstu.ru',
-    #     'PORT': '5432',
+    #     'PORT': '',
     # }
 }
 
